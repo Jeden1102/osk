@@ -109,22 +109,22 @@ const Header = () => {
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
                       navbarOpen ? " top-[7px] rotate-45" : " "
-                    } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${
-                      pathUrl === "/" ? "bg-dark dark:bg-white" : "bg-white"
+                    } ${pathUrl !== "/" && "!bg-gray-900 dark:!bg-white"} ${
+                      pathUrl === "/" ? "bg-gray-900 dark:bg-white" : "bg-white"
                     }`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
                       navbarOpen ? "opacity-0 " : " "
-                    } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${
-                      pathUrl === "/" ? "bg-dark dark:bg-white" : "bg-white"
+                    } ${pathUrl !== "/" && "!bg-gray-900 dark:!bg-white"} ${
+                      pathUrl === "/" ? "bg-gray-900 dark:bg-white" : "bg-white"
                     }`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
                       navbarOpen ? " top-[-8px] -rotate-45" : " "
-                    } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${
-                      pathUrl === "/" ? "bg-dark dark:bg-white" : "bg-white"
+                    } ${pathUrl !== "/" && "!bg-gray-900 dark:!bg-white"} ${
+                      pathUrl === "/" ? "bg-gray-900 dark:bg-white" : "bg-white"
                     }`}
                   />
                 </button>

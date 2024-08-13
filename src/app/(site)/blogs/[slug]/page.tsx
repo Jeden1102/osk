@@ -81,7 +81,7 @@ export default async function Post({ params }: Props) {
     <>
       <Breadcrumb pageName="Blog Details" />
 
-      <section className="pb-10 pt-20 dark:bg-gray-900 lg:pb-20 lg:pt-[120px]">
+      <section className="pb-10 pt-20 dark:bg-gray-900  lg:pb-20 lg:pt-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4">

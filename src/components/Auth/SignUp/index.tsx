@@ -42,7 +42,7 @@ const SignUp = () => {
   };
 
   return (
-    <section className="bg-[#F4F7FF] py-14 dark:bg-gray-900 lg:py-[90px]">
+    <section className="bg-[#F4F7FF] py-14 dark:bg-gray-900  lg:py-[90px]">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
