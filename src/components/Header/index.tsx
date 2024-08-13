@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
+import { Button } from "@/components/ui/button";
 import menuData from "./menuData";
 
 const Header = () => {
@@ -290,39 +290,15 @@ const Header = () => {
                     )}
                   </>
                 ) : (
-                  <>
-                    {pathUrl !== "/" ? (
-                      <>
-                        <Link
-                          href="/signin"
-                          className="px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white"
-                        >
-                          Sign In
-                        </Link>
-                        <Link
-                          href="/signup"
-                          className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
-                        >
-                          Sign Up
-                        </Link>
-                      </>
-                    ) : (
-                      <>
-                        <Link
-                          href="/signin"
-                          className={`px-7 py-3 text-base font-medium hover:opacity-70 ${"text-dark dark:text-white"}`}
-                        >
-                          Sign In
-                        </Link>
-                        <Link
-                          href="/signup"
-                          className={`rounded-lg px-6 py-3 text-base font-medium text-white duration-300 ease-in-out ${"bg-primary hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"}`}
-                        >
-                          Sign Up
-                        </Link>
-                      </>
-                    )}
-                  </>
+                  <div className="flex gap-4 ml-4">
+                    <Button asChild>
+                      <Link href="/signin">Sign In</Link>
+                    </Button>
+
+                    <Button asChild variant={"secondary"}>
+                      <Link href="/signup">Sign Up</Link>
+                    </Button>
+                  </div>
                 )}
               </div>
             </div>

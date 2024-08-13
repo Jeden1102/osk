@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 const CallToAction = () => {
   return (
@@ -19,12 +20,9 @@ const CallToAction = () => {
                   There are many variations of passages of Lorem Ipsum but the
                   majority have suffered in some form.
                 </p>
-                <Link
-                  href="/"
-                  className="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]"
-                >
-                  Start using Play
-                </Link>
+                <Button asChild variant="secondary" size="lg">
+                  <Link href="/">Start using Play</Link>
+                </Button>
               </div>
             </div>
           </div>
