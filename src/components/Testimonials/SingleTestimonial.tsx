@@ -14,14 +14,14 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
     ratingIcons.push(
       <span key={index} className="text-[#fbb040]">
         {starIcon}
-      </span>,
+      </span>
     );
   }
 
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/3">
       <div
-        className="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
+        className="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-gray-900 sm:px-[30px]"
         data-wow-delay=".1s"
       >
         <div className="mb-[18px] flex items-center gap-[2px]">

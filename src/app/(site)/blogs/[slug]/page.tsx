@@ -81,7 +81,7 @@ export default async function Post({ params }: Props) {
     <>
       <Breadcrumb pageName="Blog Details" />
 
-      <section className="pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+      <section className="pb-10 pt-20 dark:bg-gray-900 lg:pb-20 lg:pt-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4">
@@ -229,10 +229,7 @@ export default async function Post({ params }: Props) {
             </div>
 
             {posts.slice(0, 3).map((blog, key) => (
-              <div
-                key={key}
-                className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
-              >
+              <div key={key} className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3">
                 <SingleBlog blog={blog} />
               </div>
             ))}

@@ -48,7 +48,7 @@ const Header = () => {
       <header
         className={`ud-header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
+            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-black/90"
             : "absolute bg-transparent"
         }`}
       >
@@ -156,7 +156,7 @@ const Header = () => {
                               scroll={false}
                               href={menuItem.path}
                               className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${"text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"} ${
-                                pathUrl === menuItem?.path && "!text-primary"
+                                pathUrl === menuItem?.path && "font-bold"
                               }`}
                             >
                               {menuItem.title}

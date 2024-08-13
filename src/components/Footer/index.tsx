@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer
-      className="wow fadeInUp relative z-10 bg-[#090E34] pt-20 lg:pt-[100px]"
+      className="wow fadeInUp relative z-10 bg-[#090E34] pt-20 lg:pt-[100px] text-gray-200"
       data-wow-delay=".15s"
     >
       <div className="container">
@@ -116,22 +116,6 @@ const Footer = () => {
                     Features
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Testimonial
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
@@ -146,7 +130,7 @@ const Footer = () => {
                     href="/#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    How it works
+                    For admin
                   </a>
                 </li>
                 <li>
@@ -154,7 +138,7 @@ const Footer = () => {
                     href="/#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Privacy policy
+                    For instructor
                   </a>
                 </li>
                 <li>
@@ -162,56 +146,7 @@ const Footer = () => {
                     href="/#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Refund policy
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
-            <div className="mb-10 w-full">
-              <h4 className="mb-9 text-lg font-semibold text-white">
-                Our Products
-              </h4>
-              <ul>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    LineIcons
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Next.js Templates
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    TailAdmin
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    PlainAdmin
+                    For student
                   </a>
                 </li>
               </ul>
@@ -236,7 +171,7 @@ const Footer = () => {
                     href="/#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Blogs
+                    Blog
                   </a>
                 </li>
                 <li>
@@ -245,14 +180,6 @@ const Footer = () => {
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Support
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    About
                   </a>
                 </li>
               </ul>
@@ -286,21 +213,6 @@ const Footer = () => {
                     Terms of service
                   </a>
                 </div>
-              </div>
-            </div>
-            <div className="w-full px-4 md:w-1/3 lg:w-1/2">
-              <div className="my-1 flex justify-center md:justify-end">
-                <p className="text-base text-gray-7">
-                  Designed and Developed by{" "}
-                  <a
-                    href="https://tailgrids.com"
-                    rel="nofollow noopner noreferrer"
-                    target="_blank"
-                    className="text-gray-1 hover:underline"
-                  >
-                    TailGrids and Next.js Templates
-                  </a>
-                </p>
               </div>
             </div>
           </div>
