@@ -122,7 +122,7 @@ const Header = () => {
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                      navbarOpen ? " top-[-8px] -rotate-45" : " "
+                      navbarOpen ? " top-[-9px] -rotate-45" : " "
                     } ${pathUrl !== "/" && "!bg-gray-900 dark:!bg-white"} ${
                       pathUrl === "/" ? "bg-gray-900 dark:bg-white" : "bg-white"
                     }`}
