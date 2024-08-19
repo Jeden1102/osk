@@ -1,3 +1,4 @@
+"use client";
 import axios from "axios";
 import React from "react";
 import OfferList from "./OfferList";
@@ -16,7 +17,7 @@ const PricingBox = ({ product }: { product: Price }) => {
         headers: {
           "Content-Type": "application/json",
         },
-      },
+      }
     );
     window.location.assign(data);
   };

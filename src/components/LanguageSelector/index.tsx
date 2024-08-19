@@ -1,31 +1,40 @@
 import * as React from "react";
 import { usePathname, useRouter } from "next/navigation";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default ({ lang }: { lang: string }) => {
-  const currentLanguage = lang;
   const router = useRouter();
-  const pathname = usePathname(); // Zwraca aktualną ścieżkę URL, np. '/en/test'
+  const pathname = usePathname();
   const langs = [
     { lang: "en", fullName: "English", shortName: "EN" },
     { lang: "pl", fullName: "Polski", shortName: "PL" },
   ];
 
   function handleLangChange({ lang }: { lang: string }) {
-    const segments = pathname.split("/").slice(2); // Zwraca wszystkie segmenty po aktualnym języku, np. ['test']
-    const newPath = `/${lang}/${segments.join("/")}`; // Buduje nową ścieżkę z nowym językiem
+    const segments = pathname.split("/").slice(2);
+    const newPath = `/${lang}/${segments.join("/")}`;
     router.push(newPath);
   }
 
   return (
-    <select
-      value={currentLanguage}
-      onChange={(e) => handleLangChange({ lang: e.target.value, fullName: "" })}
+    <Select
+      onValueChange={(val) => handleLangChange({ lang: val })}
+      defaultValue={lang}
     >
-      {langs.map((lang) => (
-        <option key={lang.lang} value={lang.lang}>
-          {lang.fullName}
-        </option>
-      ))}
-    </select>
+      <SelectTrigger className="w-[120px]">
+        <SelectValue placeholder="English" />
+      </SelectTrigger>
+      <SelectContent>
+        {langs.map((lang) => (
+          <SelectItem value={lang.lang}>{lang.fullName}</SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
   );
 };
