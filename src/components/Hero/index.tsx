@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-const Hero = () => {
+import { getDictionary } from "@/dictionaries";
+const Hero = async ({ lang }: { lang: string }) => {
+  const { title, description } = await getDictionary(lang);
   return (
     <>
       <section
@@ -16,7 +18,7 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug  sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  Open-source SaaS Starter Kit and Boilerplate for Next.js
+                  {title}
                 </h1>
                 <p className="mb-9 max-w-[600px] text-base font-medium  sm:text-lg sm:leading-[1.44]">
                   Next.js SaaS Boilerplate and Starter Kit designed and built

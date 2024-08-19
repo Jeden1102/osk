@@ -7,8 +7,11 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import menuData from "./menuData";
+import LanguageSelector from "../LanguageSelector";
+import { useLang } from "@/hooks/useLang";
 
 const Header = () => {
+  const { lang } = useLang();
   const { data: session } = useSession();
 
   const pathUrl = usePathname();
@@ -144,7 +147,7 @@ const Header = () => {
                             <Link
                               onClick={navbarToggleHandler}
                               scroll={false}
-                              href={menuItem.path}
+                              href={`/${lang}/${menuItem.path}`}
                               className={`ud-menu-scroll flex py-2 text-base text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 ${
                                 pathUrl === menuItem?.path && "text-primary"
                               }`}
@@ -263,6 +266,8 @@ const Header = () => {
                     </svg>
                   </span>
                 </button>
+
+                <LanguageSelector lang={lang} />
 
                 {session?.user ? (
                   <>

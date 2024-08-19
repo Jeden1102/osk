@@ -4,12 +4,11 @@ import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Blog Grids | Play SaaS Starter Kit and Boilerplate for Next.js",
+  title: "Blog Grids | Play SaaS Starter Kit and Boilerplate for Next.js",
   description: "Blog grids page description",
 };
 
-const Blog = () => {
+const Blog = ({ params }: any) => {
   const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
 
   return (

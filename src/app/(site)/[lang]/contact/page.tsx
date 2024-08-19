@@ -3,12 +3,11 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Contact Page | Play SaaS Starter Kit and Boilerplate for Next.js",
+  title: "Contact Page | Play SaaS Starter Kit and Boilerplate for Next.js",
   description: "This is contact page description",
 };
 
-const ContactPage = () => {
+const ContactPage = ({ params }: any) => {
   return (
     <>
       <Breadcrumb pageName="Contact Page" />

@@ -1,8 +1,12 @@
+import { getDictionary } from "@/dictionaries";
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-const Features = () => {
+const Features = async ({ lang }: { lang: string }) => {
+  const { title, description } = await getDictionary(lang);
+  console.log(title);
+
   return (
     <section className="pb-8 pt-20 dark:bg-gray-900  lg:pb-[70px] lg:pt-[120px]">
       <div className="container">
