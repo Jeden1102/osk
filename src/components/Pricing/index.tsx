@@ -1,10 +1,8 @@
-import { getDictionary } from "@/dictionaries";
 import SectionTitle from "../Common/SectionTitle";
 import PricingBox from "./PricingBox";
 import { pricingData } from "@/stripe/pricingData";
 
-const Pricing = async ({ lang }: { lang: string }) => {
-  const { title, description } = await getDictionary(lang);
+const Pricing = () => {
   return (
     <section
       id="pricing"
@@ -14,7 +12,7 @@ const Pricing = async ({ lang }: { lang: string }) => {
         <div className="mb-[60px]">
           <SectionTitle
             subtitle="Pricing Table"
-            title={title}
+            title="title"
             paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
             center
           />

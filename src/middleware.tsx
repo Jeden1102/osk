@@ -1,16 +1,16 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import createMiddleware from "next-intl/middleware";
 
-const defaultLocale = "en";
+const middleware = createMiddleware({
+  // Add locales you want in the app
+  locales: ["en", "pl"],
 
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  // Default locale if no match
+  defaultLocale: "pl",
+});
 
-  if (pathname === "/") {
-    return NextResponse.redirect(new URL(`/${defaultLocale}`, request.url));
-  }
-}
+export default middleware;
 
 export const config = {
-  matcher: ["/"],
+  // Match only internationalized pathnames
+  matcher: ["/", "/(pl|en)/:page*"],
 };

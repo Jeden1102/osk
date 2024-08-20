@@ -12,7 +12,7 @@ const PricingPage = ({ params }: any) => {
   return (
     <>
       <Breadcrumb pageName="Pricing Page" />
-      <Pricing lang={params.lang} />
+      <Pricing />
       <Faq />
     </>
   );

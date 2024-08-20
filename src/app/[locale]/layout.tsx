@@ -11,11 +11,12 @@ import ToasterContext from "../api/contex/ToasetContex";
 import { useEffect, useState } from "react";
 import PreLoader from "@/components/Common/PreLoader";
 
-export default function RootLayout({
-  children,
-}: {
+interface RootLayoutProps {
   children: React.ReactNode;
-}) {
+  locale: never;
+}
+
+export default function RootLayout({ children, locale }: RootLayoutProps) {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {

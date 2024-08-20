@@ -1,5 +1,4 @@
 import { Menu } from "@/types/menu";
-import { useParams } from "next/navigation";
 
 const menuData: Menu[] = [
   {

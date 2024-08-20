@@ -12,6 +12,7 @@ import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Play Next.js - SaaS Starter Kit and Boilerplate for Next.js",
@@ -21,20 +22,21 @@ export const metadata: Metadata = {
 
 export default function Home({ params }: any) {
   const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
-
+  const t = useTranslations("Home");
   return (
     <main>
       <ScrollUp />
-      <Hero lang={params.lang} />
-      <Features lang={params.lang} />
-      <About lang={params.lang} />
-      <CallToAction lang={params.lang} />
+      <Hero />
+      {t(`navigation.home`)}
+      <Features />
+      <About />
+      <CallToAction />
       {/* <Pricing /> */}
       {/* <Testimonials /> */}
       <Faq />
       {/* <Team /> */}
-      <HomeBlogSection posts={posts} lang={params.lang} />
-      <Contact lang={params.lang} />
+      <HomeBlogSection posts={posts} />
+      <Contact />
       {/* <Clients /> */}
     </main>
   );
