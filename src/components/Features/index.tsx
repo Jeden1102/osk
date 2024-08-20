@@ -21,21 +21,36 @@ const Features = () => {
           <TabsContent value="admin">
             <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">
               {featuresData.admin.map((feature, i) => (
-                <SingleFeature key={i} feature={feature} />
+                <SingleFeature
+                  key={i}
+                  feature={feature}
+                  featureKey="admin"
+                  index={i}
+                />
               ))}
             </div>
           </TabsContent>
           <TabsContent value="instructor">
             <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">
               {featuresData.instructor.map((feature, i) => (
-                <SingleFeature key={i} feature={feature} />
+                <SingleFeature
+                  key={i}
+                  feature={feature}
+                  featureKey="instructor"
+                  index={i}
+                />
               ))}
             </div>
           </TabsContent>
           <TabsContent value="student">
             <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">
               {featuresData.student.map((feature, i) => (
-                <SingleFeature key={i} feature={feature} />
+                <SingleFeature
+                  key={i}
+                  feature={feature}
+                  featureKey="student"
+                  index={i}
+                />
               ))}
             </div>
           </TabsContent>

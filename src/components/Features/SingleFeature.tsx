@@ -1,8 +1,19 @@
 import { Feature } from "@/types/feature";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon, title, paragraph, btn, btnLink } = feature;
+const SingleFeature = ({
+  feature,
+  featureKey,
+  index,
+}: {
+  feature: Feature;
+  featureKey: string;
+  index: number;
+}) => {
+  const t = useTranslations();
+  const { icon, btn, btnLink } = feature;
+  console.log(featureKey);
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/4">
       <div className="wow fadeInUp group mb-12" data-wow-delay=".15s">
@@ -11,10 +22,10 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {icon}
         </div>
         <h3 className="mb-3 text-xl font-bold text-dark dark:text-white">
-          {title}
+          {t(`Features.${featureKey}.feature_${index + 1}.title`)}
         </h3>
         <p className="mb-8 text-body-color dark:text-dark-6 lg:mb-11">
-          {paragraph}
+          {t(`Features.${featureKey}.feature_${index + 1}.desc`)}
         </p>
         <Link
           href={btnLink}

@@ -1,11 +1,81 @@
 {
+  "Common": {
+    "aboutProduct": "O produkcie",
+    "startFreeTrial": "Sprawdz za darmo"
+  },
   "Home": {
-    "navigation": {
-      "home": "Heim",
-      "about": "Über uns",
-      "contact": "Kontakt"
+    "hero": {
+      "title": "Zarządzaj swoją szkołą jazdy z łatwością",
+      "description": "Odkryj nowoczesne narzędzie do zarządzania szkołą jazdy. Rezerwuj lekcje, monitoruj postępy kursantów i komunikuj się z instruktorami — wszystko w jednej, intuicyjnej aplikacji."
+    }
+  },
+  "Pricing": {
+    "hero": {
+      "title": "Polski tytul pricing"
+    }
+  },
+  "Navigation": {
+    "Home": "Start",
+    "Product": "Produkt",
+    "Pricing": "Cennik",
+    "Contact": "Kontakt",
+    "Blog": "Blog",
+    "FAQ": "FAQ"
+  },
+  "Features": {
+    "admin": {
+      "feature_1": {
+        "title": "Zarządzanie Kursantami",
+        "desc": "Śledzenie postępów kursantów, zarządzanie zapisami i harmonogramem zajęć."
+      },
+      "feature_2": {
+        "title": "Automatyczne Fakturowanie",
+        "desc": "Automatyczne generowanie faktur za zajęcia, płatności online i raportowanie finansowe."
+      },
+      "feature_3": {
+        "title": "Raporty i Analityka",
+        "desc": "Tworzenie raportów dotyczących wyników kursantów, frekwencji i wydajności instruktorów."
+      },
+      "feature_4": {
+        "title": "Integracja z Kalendarzami",
+        "desc": "Synchronizacja harmonogramów z popularnymi kalendarzami, takimi jak Google Calendar."
+      }
     },
-    "title": "Internationalisierung (i18n) in Next.js 14",
-    "description": "Next.js 14 führt erweiterte Internationalisierungs (i18n)-Funktionen ein, die Entwicklern ermöglichen, Übersetzungen, lokalisierungsbasiertes Routing und Inhaltslokalisierung für weltweit zugängliche Webanwendungen mühelos zu verwalten. <br /> <br />Darüber hinaus bietet es integrierte Unterstützung für mehrere Sprachvarianten, dynamisches Inhaltsladen und robuste Fallback-Behandlung."
+    "instructor": {
+      "feature_1": {
+        "title": "Śledzenie Postępów Kursantów",
+        "desc": "Monitorowanie postępów uczniów, oceny i informacje zwrotne na temat jazdy."
+      },
+      "feature_2": {
+        "title": "Harmonogram Instruktora",
+        "desc": "Łatwe zarządzanie własnym harmonogramem jazd oraz powiadomienia o nadchodzących lekcjach."
+      },
+      "feature_3": {
+        "title": "Komunikacja z Kursantami",
+        "desc": "Bezpośrednie wysyłanie wiadomości i przypomnień do kursantów przez aplikację."
+      },
+      "feature_4": {
+        "title": "Historia Jazd",
+        "desc": "Dostęp do historii przeprowadzonych jazd oraz notatek do każdej lekcji."
+      }
+    },
+    "student": {
+      "feature_1": {
+        "title": "Rezerwacja Jazd",
+        "desc": "Łatwe rezerwowanie terminów jazd z wybranym instruktorem."
+      },
+      "feature_2": {
+        "title": "Śledzenie Postępów",
+        "desc": "Monitorowanie swoich postępów w nauce jazdy oraz uzyskiwanie informacji zwrotnych."
+      },
+      "feature_3": {
+        "title": "Materiały Edukacyjne",
+        "desc": "Dostęp do materiałów szkoleniowych, wideo i quizów online."
+      },
+      "feature_4": {
+        "title": "Powiadomienia o Zajęciach",
+        "desc": "Automatyczne przypomnienia o nadchodzących lekcjach i zadaniach do wykonania."
+      }
+    }
   }
 }

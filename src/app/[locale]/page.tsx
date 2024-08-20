@@ -27,7 +27,6 @@ export default function Home({ params }: any) {
     <main>
       <ScrollUp />
       <Hero />
-      {t(`navigation.home`)}
       <Features />
       <About />
       <CallToAction />

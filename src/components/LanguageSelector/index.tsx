@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
@@ -5,13 +6,8 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import enFlag from "../../../public/images/i18n/england.png";
 import plFlag from "../../../public/images/i18n/poland.png";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { IoChevronDownOutline } from "react-icons/io5";
+import { IoMdCheckmark } from "react-icons/io";
 
 const LangSwitcher: React.FC = () => {
   interface Option {
@@ -23,6 +19,8 @@ const LangSwitcher: React.FC = () => {
   const router = useRouter();
   const pathname = usePathname();
 
+  const lang = pathname.split("/")?.[1];
+
   const [isOptionsExpanded, setIsOptionsExpanded] = useState(false);
 
   const options: Option[] = [
@@ -32,33 +30,24 @@ const LangSwitcher: React.FC = () => {
 
   const setOption = (option: Option) => {
     setIsOptionsExpanded(false);
-    router.push(`/${option.code}`);
+
+    const newPathname = pathname.replace(/^\/[a-z]{2}/, `/${option.code}`);
+
+    router.push(newPathname);
   };
 
   return (
-    <div className="flex items-center justify-center bg-gray-100">
-      <div className="relative text-lg w-48">
+    <div className="flex items-center justify-center">
+      <div className="relative text-lg w-32">
         <button
-          className=" justify-between w-full border border-gray-300 text-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className=" justify-between w-full border border-gray-300 bg-gray-100 text-gray-800  focus:outline-none font-medium rounded-lg text-sm px-5 py-2 ml-2 text-center inline-flex items-center"
           onClick={() => setIsOptionsExpanded(!isOptionsExpanded)}
           onBlur={() => setIsOptionsExpanded(false)}
         >
-          Select Language
-          <svg
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className={`h-4 w-4 transform transition-transform duration-200 ease-in-out ${
-              isOptionsExpanded ? "rotate-180" : "rotate-0"
-            }`}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
+          Language
+          <IoChevronDownOutline
+            className={`transition-all ${isOptionsExpanded ? "rotate-180" : "rotate-0"}`}
+          />
         </button>
         <div
           className={`transition-transform duration-500 ease-custom ${
@@ -67,11 +56,11 @@ const LangSwitcher: React.FC = () => {
               : "translate-y-0 scale-y-100 opacity-100"
           }`}
         >
-          <ul className="absolute left-0 right-0 mb-4 bg-white divide-y rounded-lg shadow-lg overflow-hidden">
+          <ul className="absolute left-2 w-full right-0 mb-4 bg-white divide-y rounded-lg shadow-lg overflow-hidden">
             {options.map((option, index) => (
               <li
                 key={index}
-                className="px-3 py-2 transition-colors text-sm duration-300 hover:bg-gray-200 flex items-center cursor-pointer"
+                className="px-3 py-2 transition-colors text-sm duration-300 hover:bg-gray-200 flex items-center gap-2 cursor-pointer text-gray-800"
                 onMouseDown={(e) => {
                   e.preventDefault();
                   setOption(option);
@@ -85,22 +74,7 @@ const LangSwitcher: React.FC = () => {
                   alt="logo"
                 />
                 &nbsp;&nbsp;{option.country}
-                {pathname === `/${option.code}` && (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-7 h-7 text-green-500 ml-auto"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={3}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                )}
+                {lang === option.code && <IoMdCheckmark />}
               </li>
             ))}
           </ul>

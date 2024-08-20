@@ -1,11 +1,81 @@
 {
+  "Common": {
+    "aboutProduct": "About the product",
+    "startFreeTrial": "Start Free Trial"
+  },
   "Home": {
-    "navigation": {
-      "home": "Inicio",
-      "about": "Acerca de",
-      "contact": "Contacto"
+    "hero": {
+      "title": "Manage your driving school with ease",
+      "description": "Discover a modern tool for managing your driving school. Book lessons, track student progress, and communicate with instructors—all in one intuitive application."
+    }
+  },
+  "Pricing": {
+    "hero": {
+      "title": "English pricing title"
+    }
+  },
+  "Navigation": {
+    "Home": "Home",
+    "Product": "Product",
+    "Pricing": "Pricing",
+    "Contact": "Contact",
+    "Blog": "Blog",
+    "FAQ": "FAQ"
+  },
+  "Features": {
+    "admin": {
+      "feature_1": {
+        "title": "Student Management",
+        "desc": "Track student progress, manage enrollments, and schedule classes."
+      },
+      "feature_2": {
+        "title": "Automated Invoicing",
+        "desc": "Automatically generate invoices for lessons, online payments, and financial reporting."
+      },
+      "feature_3": {
+        "title": "Reports and Analytics",
+        "desc": "Create reports on student performance, attendance, and instructor efficiency."
+      },
+      "feature_4": {
+        "title": "Calendar Integration",
+        "desc": "Sync schedules with popular calendars like Google Calendar."
+      }
     },
-    "title": "Internacionalización (i18n) en Next.js 14",
-    "description": "Next.js 14 introduce características avanzadas de internacionalización (i18n), capacitando a los desarrolladores para gestionar fácilmente traducciones, enrutamiento basado en localización y localización de contenido para aplicaciones web globalmente accesibles. <br /> <br />Esto también aprovecha el soporte incorporado para múltiples locales, carga dinámica de contenido y manejo de respaldo robusto."
+    "instructor": {
+      "feature_1": {
+        "title": "Track Student Progress",
+        "desc": "Monitor student progress, grades, and driving feedback."
+      },
+      "feature_2": {
+        "title": "Instructor Schedule",
+        "desc": "Easily manage your own driving schedule and receive notifications about upcoming lessons."
+      },
+      "feature_3": {
+        "title": "Student Communication",
+        "desc": "Directly send messages and reminders to students through the app."
+      },
+      "feature_4": {
+        "title": "Lesson History",
+        "desc": "Access the history of conducted lessons and notes for each session."
+      }
+    },
+    "student": {
+      "feature_1": {
+        "title": "Lesson Booking",
+        "desc": "Easily book driving lesson slots with your chosen instructor."
+      },
+      "feature_2": {
+        "title": "Track Progress",
+        "desc": "Monitor your progress in learning to drive and receive feedback."
+      },
+      "feature_3": {
+        "title": "Educational Materials",
+        "desc": "Access training materials, videos, and online quizzes."
+      },
+      "feature_4": {
+        "title": "Lesson Notifications",
+        "desc": "Automatic reminders about upcoming lessons and tasks."
+      }
+    }
   }
 }

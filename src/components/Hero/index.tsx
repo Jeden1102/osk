@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-const Hero = async () => {
+import { useTranslations } from "next-intl";
+
+const Hero = () => {
+  const t = useTranslations();
+
   return (
     <>
       <section
@@ -16,26 +20,21 @@ const Hero = async () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug  sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  title
+                  {t("Home.hero.title")}
                 </h1>
                 <p className="mb-9 max-w-[600px] text-base font-medium  sm:text-lg sm:leading-[1.44]">
-                  Next.js SaaS Boilerplate and Starter Kit designed and built
-                  for SaaS startups. It comes with all necessary integrations,
-                  pages, and components you need to launch a feature-rich SaaS
-                  websites.
+                  {t("Home.hero.description")}
                 </p>
                 <ul className="mb-10 flex flex-wrap items-center justify-center md:justify-start gap-5">
                   <li>
                     <Button asChild size="lg">
-                      <Link href="https://nextjstemplates.com/templates/play">
-                        Download Now
-                      </Link>
+                      <Link href="/product">{t("Common.aboutProduct")}</Link>
                     </Button>
                   </li>
                   <li>
                     <Button asChild variant="secondary" size="lg">
                       <Link href="https://nextjstemplates.com/templates/play">
-                        Download Now
+                        {t("Common.startFreeTrial")}
                       </Link>
                     </Button>
                   </li>
