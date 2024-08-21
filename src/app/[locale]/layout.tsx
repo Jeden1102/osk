@@ -4,7 +4,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "next-themes";
 import "../../styles/index.css";
 import "../../styles/prism-vsc-dark-plus.css";
-import ToasterContext from "../api/contex/ToasetContex";
+import ToasterContext from "../api_tmp/contex/ToasetContex";
 
 interface RootLayoutProps {
   children: React.ReactNode;
