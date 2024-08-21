@@ -3,25 +3,25 @@ const featuresData = {
   admin: [
     {
       id: 1,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
     {
       id: 2,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
     {
       id: 3,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
     {
       id: 4,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
@@ -29,25 +29,25 @@ const featuresData = {
   instructor: [
     {
       id: 1,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
     {
       id: 2,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
     {
       id: 3,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
     {
       id: 4,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
@@ -55,25 +55,25 @@ const featuresData = {
   student: [
     {
       id: 1,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
     {
       id: 2,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
     {
       id: 3,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },
     {
       id: 4,
-      icon: <FaCheck />,
+      icon: <FaCheck className="text-3xl text-white" />,
       btn: "Learn More",
       btnLink: "/#",
     },

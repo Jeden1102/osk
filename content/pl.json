@@ -23,6 +23,12 @@
     "FAQ": "FAQ"
   },
   "Features": {
+    "title": "O produkcie",
+    "subtitle": "Najwazniejsze informacje o produkcie",
+    "desc": "Produkt pomaga w ....",
+    "for_admin": "Dla administratora",
+    "for_instructor": "Dla instruktora",
+    "for_student": "Dla studenta",
     "admin": {
       "feature_1": {
         "title": "Zarządzanie Kursantami",

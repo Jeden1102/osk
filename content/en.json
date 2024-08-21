@@ -23,6 +23,12 @@
     "FAQ": "FAQ"
   },
   "Features": {
+    "title": "About  product",
+    "subtitle": "General information about the product",
+    "desc": "Product helps with...",
+    "for_admin": "For admin",
+    "for_instructor": "For instructor",
+    "for_student": "For student",
     "admin": {
       "feature_1": {
         "title": "Student Management",
