@@ -1,12 +1,22 @@
 {
   "Common": {
     "aboutProduct": "About the product",
-    "startFreeTrial": "Start Free Trial"
+    "startFreeTrial": "Start Free Trial",
+    "know_more": "Know more"
   },
   "Home": {
     "hero": {
       "title": "Manage your driving school with ease",
       "description": "Discover a modern tool for managing your driving school. Book lessons, track student progress, and communicate with instructors—all in one intuitive application."
+    },
+    "about": {
+      "title": "A Modern Tool for Managing Your Driving School",
+      "description": "Optimize your driving school with innovative features for student management, invoicing, and communication. Take your organization to the next level with our intuitive application."
+    },
+    "cta": {
+      "title": "What Are You Looking For?",
+      "subtitle": "Get Started Now",
+      "description": "Start free trial and explore the possibility of our app!"
     }
   },
   "Pricing": {
@@ -81,6 +91,39 @@
       "feature_4": {
         "title": "Lesson Notifications",
         "desc": "Automatic reminders about upcoming lessons and tasks."
+      }
+    }
+  },
+  "Faq": {
+    "sectionTitle": {
+      "subtitle": "FAQ",
+      "title": "Any Questions? Answered",
+      "paragraph": "Here are answers to the most frequently asked questions about our services. If you don't find the answer here, please contact us."
+    },
+    "questions": {
+      "question_1": {
+        "question": "What services does your platform offer?",
+        "answer": "Our platform provides comprehensive tools for managing a driving school, including lesson booking, student progress tracking, schedule management, and instructor communication."
+      },
+      "question_2": {
+        "question": "Can I customize the features to fit my driving school's needs?",
+        "answer": "Yes, our software is flexible and can be tailored to the specific needs of your driving school."
+      },
+      "question_3": {
+        "question": "Does the platform support online payments?",
+        "answer": "Yes, our platform supports online payments, making it easier to manage course fees."
+      },
+      "question_4": {
+        "question": "How can I track my students' progress?",
+        "answer": "Our platform offers tools for tracking student progress, including performance reports and attendance analytics."
+      },
+      "question_5": {
+        "question": "Can I integrate the schedule with my calendar?",
+        "answer": "Yes, our platform allows for synchronization with popular calendars, such as Google Calendar."
+      },
+      "question_6": {
+        "question": "Is your platform GDPR compliant?",
+        "answer": "Yes, our software is GDPR compliant, ensuring the security of user personal data."
       }
     }
   }

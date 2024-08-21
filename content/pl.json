@@ -1,12 +1,22 @@
 {
   "Common": {
     "aboutProduct": "O produkcie",
-    "startFreeTrial": "Sprawdz za darmo"
+    "startFreeTrial": "Sprawdz za darmo",
+    "know_more": "Dowiedz sie wiecej"
   },
   "Home": {
     "hero": {
       "title": "Zarządzaj swoją szkołą jazdy z łatwością",
       "description": "Odkryj nowoczesne narzędzie do zarządzania szkołą jazdy. Rezerwuj lekcje, monitoruj postępy kursantów i komunikuj się z instruktorami — wszystko w jednej, intuicyjnej aplikacji."
+    },
+    "about": {
+      "title": "Nowoczesne narzędzie do zarządzania szkołą jazdy",
+      "description": "Zoptymalizuj swoją szkołę jazdy za pomocą innowacyjnych funkcji do zarządzania kursantami, fakturowania i komunikacji. Przejdź na nowy poziom organizacji dzięki naszej intuicyjnej aplikacji."
+    },
+    "cta": {
+      "title": "Czego szukasz?",
+      "subtitle": "Zacznij już teraz",
+      "description": "Rozpocznij okres probny i sprawdz jak uzytyczne moze byc nasze rozwiazanie!"
     }
   },
   "Pricing": {
@@ -81,6 +91,39 @@
       "feature_4": {
         "title": "Powiadomienia o Zajęciach",
         "desc": "Automatyczne przypomnienia o nadchodzących lekcjach i zadaniach do wykonania."
+      }
+    }
+  },
+  "Faq": {
+    "sectionTitle": {
+      "subtitle": "FAQ",
+      "title": "Jakieś pytania? Mamy odpowiedzi!",
+      "paragraph": "Oto odpowiedzi na najczęściej zadawane pytania dotyczące naszych usług. Jeśli nie znajdziesz tutaj odpowiedzi, skontaktuj się z nami."
+    },
+    "questions": {
+      "question_1": {
+        "question": "Jakie usługi oferuje wasza platforma?",
+        "answer": "Nasza platforma oferuje kompleksowe narzędzia do zarządzania szkołą jazdy, w tym rezerwacje lekcji, śledzenie postępów kursantów, zarządzanie harmonogramem i komunikację z instruktorami."
+      },
+      "question_2": {
+        "question": "Czy mogę dostosować funkcje do potrzeb mojej szkoły jazdy?",
+        "answer": "Tak, nasze oprogramowanie jest elastyczne i można je dostosować do specyficznych potrzeb Twojej szkoły jazdy."
+      },
+      "question_3": {
+        "question": "Czy platforma umożliwia płatności online?",
+        "answer": "Tak, nasza platforma wspiera płatności online, co ułatwia zarządzanie opłatami za kursy."
+      },
+      "question_4": {
+        "question": "Jak mogę śledzić postępy moich kursantów?",
+        "answer": "Nasza platforma oferuje narzędzia do śledzenia postępów kursantów, w tym raporty i analitykę wyników oraz frekwencji."
+      },
+      "question_5": {
+        "question": "Czy mogę zintegrować harmonogram zajęć z moim kalendarzem?",
+        "answer": "Tak, nasza platforma umożliwia synchronizację harmonogramów z popularnymi kalendarzami, takimi jak Google Calendar."
+      },
+      "question_6": {
+        "question": "Czy wasza platforma jest zgodna z przepisami RODO?",
+        "answer": "Tak, nasze oprogramowanie jest zgodne z przepisami RODO, zapewniając bezpieczeństwo danych osobowych użytkowników."
       }
     }
   }
