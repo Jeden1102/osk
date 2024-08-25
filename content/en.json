@@ -55,7 +55,9 @@
     "Pricing": "Pricing",
     "Contact": "Contact",
     "Blog": "Blog",
-    "FAQ": "FAQ"
+    "FAQ": "FAQ",
+    "PrivacyPolicy": "Privacy Policy",
+    "TermsOfService": "Terms of service"
   },
   "Features": {
     "title": "About  product",
@@ -151,5 +153,11 @@
         "answer": "Yes, our software is GDPR compliant, ensuring the security of user personal data."
       }
     }
+  },
+  "Footer": {
+    "slogan": "A driving school management system tailored to the needs of every user",
+    "about_us": "About Us",
+    "features": "Features",
+    "useful_links": "Useful Links"
   }
 }

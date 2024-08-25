@@ -55,7 +55,9 @@
     "Pricing": "Cennik",
     "Contact": "Kontakt",
     "Blog": "Blog",
-    "FAQ": "FAQ"
+    "FAQ": "FAQ",
+    "PrivacyPolicy": "Polityka prywatności",
+    "TermsOfService": "Regulamin"
   },
   "Features": {
     "title": "O produkcie",
@@ -151,5 +153,11 @@
         "answer": "Tak, nasze oprogramowanie jest zgodne z przepisami RODO, zapewniając bezpieczeństwo danych osobowych użytkowników."
       }
     }
+  },
+  "Footer": {
+    "slogan": "System zarządzania szkołą jazdy przystosowany do porzeb każdego użytkownika",
+    "about_us": "O nas",
+    "features": "Funkcjonalności",
+    "useful_links": "Inne"
   }
 }
