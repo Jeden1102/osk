@@ -44,7 +44,7 @@ const LangSwitcher: React.FC = () => {
           onClick={() => setIsOptionsExpanded(!isOptionsExpanded)}
           onBlur={() => setIsOptionsExpanded(false)}
         >
-          Language
+          {lang.toUpperCase()}
           <IoChevronDownOutline
             className={`transition-all ${isOptionsExpanded ? "rotate-180" : "rotate-0"}`}
           />
