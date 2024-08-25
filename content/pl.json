@@ -17,6 +17,10 @@
       "title": "Czego szukasz?",
       "subtitle": "Zacznij już teraz",
       "description": "Rozpocznij okres probny i sprawdz jak uzytyczne moze byc nasze rozwiazanie!"
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Ostatnio dodane wpisy blogowe"
     }
   },
   "Pricing": {

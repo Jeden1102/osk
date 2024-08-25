@@ -17,6 +17,10 @@
       "title": "What Are You Looking For?",
       "subtitle": "Get Started Now",
       "description": "Start free trial and explore the possibility of our app!"
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Recently added blog posts"
     }
   },
   "Pricing": {
