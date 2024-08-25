@@ -5,9 +5,14 @@ import menuData from "./menuData";
 function NavigationWrapper() {
   const t = useTranslations();
 
-  menuData.map((item) => (item.title = t(`Navigation.${item.title}`)));
+  const updatedMenuData = menuData.map(item => ({
+    ...item,
+    title: t(`Navigation.${item.title}`)
+  }));
 
-  return <Header menuData={menuData} />;
+  console.log(updatedMenuData, t);
+
+  return <Header menuData={updatedMenuData} />;
 }
 
 export default NavigationWrapper;
