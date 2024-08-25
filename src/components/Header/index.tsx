@@ -10,8 +10,6 @@ function NavigationWrapper() {
     title: t(`Navigation.${item.title}`)
   }));
 
-  console.log(updatedMenuData, t);
-
   return <Header menuData={updatedMenuData} />;
 }
 

@@ -21,6 +21,27 @@
     "blog": {
       "title": "Blog",
       "subtitle": "Recently added blog posts"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Send us a message",
+      "helpLabel": "Need some help?",
+      "form": {
+        "title": "Fill the form",
+        "send": "Send",
+        "messageTitle": {
+          "title": "Message title",
+          "placeholder": "Customized pricing"
+        },
+        "email": {
+          "title": "E-mail",
+          "placeholder": "john@doe.com"
+        },
+        "message": {
+          "title": "Message",
+          "placeholder": "I have a question about..."
+        }
+      }
     }
   },
   "Pricing": {
