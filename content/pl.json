@@ -21,6 +21,27 @@
     "blog": {
       "title": "Blog",
       "subtitle": "Ostatnio dodane wpisy blogowe"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "subtitle": "Wyślij nam wiadomość",
+      "helpLabel": "Potrzebujesz pomocy?",
+      "form": {
+        "title": "Wypełnij formularz",
+        "send": "Wyślij",
+        "messageTitle": {
+          "title": "Tytuł wiadomości",
+          "placeholder": "Spersonalizowana wycena"
+        },
+        "email": {
+          "title": "E-mail",
+          "placeholder": "jan@kowalski.pl"
+        },
+        "message": {
+          "title": "Wiadomość",
+          "placeholder": "Mam pytanie dotyczące..."
+        }
+      }
     }
   },
   "Pricing": {
