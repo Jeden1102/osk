@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="-mx-4 flex flex-col md:flex-row items-center">
             <div className="w-full px-4">
               <div
-                className="hero-content wow fadeInUp mx-auto max-w-[780px] text-center md:text-left"
+                className="hero-content wow fadeInUp mx-auto max-w-[780px]"
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug  sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
@@ -25,7 +25,7 @@ const Hero = () => {
                 <p className="mb-9 max-w-[600px] text-base font-medium  sm:text-lg sm:leading-[1.44]">
                   {t("Home.hero.description")}
                 </p>
-                <ul className="mb-10 flex flex-wrap items-center justify-center md:justify-start gap-5">
+                <ul className="mb-10 flex flex-wrap items-center gap-5">
                   <li>
                     <Button asChild size="lg">
                       <Link href="/product">{t("Common.aboutProduct")}</Link>
