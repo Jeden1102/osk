@@ -17,18 +17,7 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
     setNavbarOpen(!navbarOpen);
   };
 
-  // Sticky Navbar
-  const [sticky, setSticky] = useState(false);
-  const handleStickyNavbar = () => {
-    if (window.scrollY >= 80) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleStickyNavbar);
-  });
+  const [sticky, setSticky] = useState(true);
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
@@ -39,8 +28,6 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
       setOpenIndex(index);
     }
   };
-
-  const { theme, setTheme } = useTheme();
 
   return (
     <>

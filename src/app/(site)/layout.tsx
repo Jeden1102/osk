@@ -5,6 +5,15 @@ import { ThemeProvider } from "next-themes";
 import "../../styles/index.css";
 import "../../styles/prism-vsc-dark-plus.css";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    template: "%s | MojeJazdy",
+    default: "MojeJazdy",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {

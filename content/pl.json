@@ -5,6 +5,10 @@
     "know_more": "Dowiedz sie wiecej"
   },
   "Home": {
+    "metadata": {
+      "title": "Start",
+      "description": "Test description"
+    },
     "hero": {
       "title": "Zarządzaj swoją szkołą jazdy z łatwością",
       "description": "Odkryj nowoczesne narzędzie do zarządzania szkołą jazdy. Rezerwuj lekcje, monitoruj postępy kursantów i komunikuj się z instruktorami — wszystko w jednej, intuicyjnej aplikacji."

@@ -13,12 +13,25 @@ import Testimonials from "@/components/Testimonials";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Play Next.js - SaaS Starter Kit and Boilerplate for Next.js",
-  description:
-    "Free Next.js SaaS Boilerplate and Starter Kit designed and built for SaaS startups. It comes with all necessary integrations, pages, and components you need to launch a feature-rich SaaS websites.",
-};
+interface Params {
+  locale: string;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const { locale } = params;
+  const t = await getTranslations({ locale });
+
+  return {
+    title: t("Home.metadata.title"),
+    description: t("Home.metadata.description"),
+  };
+}
 
 export default function Home({ params }: any) {
   const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);

@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
-  title: "Pricing Page",
+  title: "Privacy Policy Page",
   description: "This is pricing page description",
 };
 
