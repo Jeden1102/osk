@@ -6,7 +6,7 @@ import { getAllPosts, getPostBySlug } from "@/utils/markdown";
 import markdownToHtml from "@/utils/markdownToHtml";
 import { format } from "date-fns";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 type Props = {
   params: { slug: string };

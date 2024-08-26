@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { Client } from "@/types/client";
 
 const SingleClient = ({ client }: { client: Client }) => {

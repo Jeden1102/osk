@@ -4,7 +4,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import axios from "axios";
 import Loader from "@/components/Common/Loader";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Image from "next/image";
 
 const ForgotPassword = () => {
