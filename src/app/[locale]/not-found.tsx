@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "404 Page",
 };
 
-const ErrorPage = () => {
+const NotFound = () => {
   return (
     <>
       <Breadcrumb pageName="404 Page" />
@@ -16,4 +16,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default NotFound;
