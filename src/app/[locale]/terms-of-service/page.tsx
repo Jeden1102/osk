@@ -17,18 +17,18 @@ export async function generateMetadata({
   const t = await getTranslations({ locale });
 
   return {
-    title: t("PrivacyPolicy.title"),
+    title: t("TermsOfService.title"),
   };
 }
 
-const PrivacyPolicyPage = ({ params }: any) => {
+const TermsOfServicePage = ({ params }: any) => {
   const t = useTranslations("");
   return (
     <>
-      <Breadcrumb pageName={t("PrivacyPolicy.title")} />
+      <Breadcrumb pageName={t("TermsOfService.title")} />
       <TextBlock>Sample text</TextBlock>
     </>
   );
 };
 
-export default PrivacyPolicyPage;
+export default TermsOfServicePage;

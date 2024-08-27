@@ -45,6 +45,7 @@
     }
   },
   "Pricing": {
+    "title": "Pricing",
     "hero": {
       "title": "English pricing title"
     }
@@ -62,7 +63,7 @@
   "Features": {
     "title": "About  product",
     "subtitle": "General information about the product",
-    "desc": "Product helps with...",
+    "desc": "By implementing the MojeJazdy system in your Driving School, you'll benefit not only as the owner, but every user of the system will too. Here are the key features of the app:",
     "for_admin": "For admin",
     "for_instructor": "For instructor",
     "for_student": "For student",
@@ -122,6 +123,7 @@
     }
   },
   "Faq": {
+    "title": "Frequently asked questions",
     "sectionTitle": {
       "subtitle": "FAQ",
       "title": "Any Questions? Answered",
@@ -159,5 +161,11 @@
     "about_us": "About Us",
     "features": "Features",
     "useful_links": "Useful Links"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy policy"
+  },
+  "TermsOfService": {
+    "title": "Terms of service"
   }
 }

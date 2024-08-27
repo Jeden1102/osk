@@ -13,7 +13,6 @@ const SingleFeature = ({
 }) => {
   const t = useTranslations();
   const { icon, btn, btnLink } = feature;
-  console.log(featureKey);
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/4">
       <div className="wow fadeInUp group mb-6" data-wow-delay=".15s">

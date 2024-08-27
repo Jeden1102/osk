@@ -66,7 +66,7 @@
   "Features": {
     "title": "O produkcie",
     "subtitle": "Najwazniejsze informacje o produkcie",
-    "desc": "Produkt pomaga w ....",
+    "desc": "Korzystając z systemu MojeJazdy w swoim Ośrodku Szkolenia Kierowców, zyskasz nie tylko Ty jako właściciel, ale także każda osoba, która z niego skorzysta. Oto kluczowe funkcje aplikacji:",
     "for_admin": "Dla administratora",
     "for_instructor": "Dla instruktora",
     "for_student": "Dla studenta",
@@ -163,5 +163,11 @@
     "about_us": "O nas",
     "features": "Funkcjonalności",
     "useful_links": "Inne"
+  },
+  "PrivacyPolicy": {
+    "title": "Polityka prywatnosci"
+  },
+  "TermsOfService": {
+    "title": "Regulamin"
   }
 }

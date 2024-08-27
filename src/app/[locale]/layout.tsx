@@ -15,8 +15,8 @@ interface RootLayoutProps {
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Acme",
-    default: "Acme", // a default is required when creating a template
+    template: "%s | MojeJazdy",
+    default: "MojeJazdy",
   },
 };
 
