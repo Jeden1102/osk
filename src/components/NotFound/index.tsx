@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "@/navigation";
 
-const NotFound = () => {
+const NotFoundComponent = () => {
   return (
     <section className="bg-white py-20 dark:bg-dark-2 lg:py-[110px]">
       <div className="container mx-auto">
@@ -77,4 +77,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default NotFoundComponent;
