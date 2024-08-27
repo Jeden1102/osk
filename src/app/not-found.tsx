@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import NotFoundComponent from "@/components/NotFound";
 import { Metadata } from "next";
-
+export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "404 Page",
 };
