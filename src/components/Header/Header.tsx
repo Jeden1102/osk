@@ -8,6 +8,7 @@ import LanguageSelector from "../LanguageSelector";
 import { Menu } from "@/types/menu";
 import { Link } from "@/navigation";
 import ThemeToggler from "./ThemeToggler";
+import currentLang from "@/utils/currentLang";
 
 const Header = ({ menuData }: { menuData: Menu[] }) => {
   const pathUrl = usePathname();
@@ -16,6 +17,25 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
+
+  const lang = pathUrl.split("/")?.[1];
+
+  const translations = {
+    pl: {
+      logIn: "Zaloguj",
+      signUp: "Zarejestruj",
+    },
+    en: {
+      logIn: "Log in",
+      signUp: "Sign up",
+    },
+  } as {
+    [key: string]: {
+      [key: string]: string;
+    };
+  };
+
+  console.log(translations[lang]);
 
   const [sticky, setSticky] = useState(true);
 
@@ -232,7 +252,7 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
                   <div className="md:hidden">
                     <div className="flex flex-col gap-2 my-4 border-t py-6">
                       <Button asChild onClick={navbarToggleHandler}>
-                        <Link href="/signin">Sign In</Link>
+                        <Link href="/signin">{translations[lang].logIn}</Link>
                       </Button>
 
                       <Button
@@ -240,7 +260,7 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
                         variant={"secondary"}
                         onClick={navbarToggleHandler}
                       >
-                        <Link href="/signup">Sign Up</Link>
+                        <Link href="/signup">{translations[lang].signUp}</Link>
                       </Button>
                     </div>
 
@@ -257,11 +277,11 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
                 <LanguageSelector />
                 <div className="flex gap-4 ml-4">
                   <Button asChild>
-                    <Link href="/signin">Sign In</Link>
+                    <Link href="/signin">{translations[lang].logIn}</Link>
                   </Button>
 
                   <Button asChild variant={"secondary"}>
-                    <Link href="/signup">Sign Up</Link>
+                    <Link href="/signup">{translations[lang].signUp}</Link>
                   </Button>
                 </div>
               </div>
