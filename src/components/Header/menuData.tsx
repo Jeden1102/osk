@@ -35,7 +35,7 @@ const menuData: Menu[] = [
     id: 6,
     title: "FAQ",
     newTab: false,
-    path: "faq",
+    path: "/faq",
   },
 ];
 export default menuData;

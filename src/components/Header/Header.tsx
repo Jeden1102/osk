@@ -231,11 +231,15 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
 
                   <div className="md:hidden">
                     <div className="flex flex-col gap-2 my-4 border-t py-6">
-                      <Button asChild>
+                      <Button asChild onClick={navbarToggleHandler}>
                         <Link href="/signin">Sign In</Link>
                       </Button>
 
-                      <Button asChild variant={"secondary"}>
+                      <Button
+                        asChild
+                        variant={"secondary"}
+                        onClick={navbarToggleHandler}
+                      >
                         <Link href="/signup">Sign Up</Link>
                       </Button>
                     </div>
