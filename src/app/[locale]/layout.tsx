@@ -7,6 +7,7 @@ import "../../styles/prism-vsc-dark-plus.css";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import NextTopLoader from 'nextjs-toploader';
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -40,6 +41,7 @@ export default async function RootLayout({
             enableSystem={false}
             defaultTheme="light"
           >
+            <NextTopLoader height={4} color="#2a9d8f" showSpinner={false}/>
             <Header />
             {children}
             <Footer />
