@@ -5,6 +5,10 @@ import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
+interface Params {
+  locale: string;
+}
+
 export async function generateMetadata({
   params,
 }: {
