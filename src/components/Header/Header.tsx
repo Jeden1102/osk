@@ -35,8 +35,6 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
     };
   };
 
-  console.log(translations[lang]);
-
   const [sticky, setSticky] = useState(true);
 
   // submenu handler

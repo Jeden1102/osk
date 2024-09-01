@@ -15,7 +15,9 @@
     },
     "about": {
       "title": "Nowoczesne narzędzie do zarządzania szkołą jazdy",
-      "description": "Zoptymalizuj swoją szkołę jazdy za pomocą innowacyjnych funkcji do zarządzania kursantami, fakturowania i komunikacji. Przejdź na nowy poziom organizacji dzięki naszej intuicyjnej aplikacji."
+      "description": "Zoptymalizuj swoją szkołę jazdy za pomocą innowacyjnych funkcji do zarządzania kursantami, fakturowania i komunikacji. Przejdź na nowy poziom organizacji dzięki naszej intuicyjnej aplikacji.",
+      "unlimited": "Nieskończony",
+      "set": "Zakres funckjonalny"
     },
     "cta": {
       "title": "Czego szukasz?",
@@ -50,7 +52,7 @@
   },
   "Pricing": {
     "hero": {
-      "title": "Polski tytul pricing"
+      "title": "Cennik"
     }
   },
   "Navigation": {
@@ -126,6 +128,7 @@
     }
   },
   "Faq": {
+    "title": "Najczęściej zadawne pytania",
     "sectionTitle": {
       "subtitle": "FAQ",
       "title": "Jakieś pytania? Mamy odpowiedzi!",
@@ -235,5 +238,8 @@
   },
   "TermsOfService": {
     "title": "Regulamin"
+  },
+  "Contact": {
+    "title": "Kontakt"
   }
 }

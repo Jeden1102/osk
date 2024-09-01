@@ -4,7 +4,7 @@ import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Grids",
+  title: "Blog",
   description: "Blog grids page description",
 };
 
@@ -13,7 +13,7 @@ const Blog = ({ params }: any) => {
 
   return (
     <>
-      <Breadcrumb pageName="Blog Grids" />
+      <Breadcrumb pageName="Blog" />
 
       <section className="pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
         <div className="container">

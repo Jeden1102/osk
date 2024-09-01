@@ -5,13 +5,19 @@
     "know_more": "Know more"
   },
   "Home": {
+    "metadata": {
+      "title": "Home",
+      "description": "Test description"
+    },
     "hero": {
       "title": "Manage your driving school with ease",
       "description": "Discover a modern tool for managing your driving school. Book lessons, track student progress, and communicate with instructors—all in one intuitive application."
     },
     "about": {
       "title": "A Modern Tool for Managing Your Driving School",
-      "description": "Optimize your driving school with innovative features for student management, invoicing, and communication. Take your organization to the next level with our intuitive application."
+      "description": "Optimize your driving school with innovative features for student management, invoicing, and communication. Take your organization to the next level with our intuitive application.",
+      "unlimited": "Unlimited",
+      "set": "Set of functionallities"
     },
     "cta": {
       "title": "What Are You Looking For?",
@@ -47,7 +53,7 @@
   "Pricing": {
     "title": "Pricing",
     "hero": {
-      "title": "English pricing title"
+      "title": "Pricing"
     }
   },
   "Navigation": {
@@ -233,5 +239,8 @@
   },
   "TermsOfService": {
     "title": "Terms of service"
+  },
+  "Contact": {
+    "title": "Contact"
   }
 }

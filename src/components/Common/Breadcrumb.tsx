@@ -1,4 +1,5 @@
 import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 const Breadcrumb = ({
   pageName,
@@ -7,6 +8,7 @@ const Breadcrumb = ({
   pageName: string;
   pageDescription?: string;
 }) => {
+  const t = useTranslations();
   return (
     <>
       <div className="dark:bg-gray-900  relative z-10 overflow-hidden pb-[60px] pt-[120px] md:pt-[130px] lg:pt-[160px]">
@@ -28,7 +30,7 @@ const Breadcrumb = ({
                       href="/"
                       className="text-dark flex items-center gap-[10px] text-base font-medium dark:text-white"
                     >
-                      Home
+                      {t('Home.metadata.title')}
                     </Link>
                   </li>
                   <li>

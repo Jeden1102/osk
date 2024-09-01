@@ -18,6 +18,7 @@ const Faq = () => {
         <div className="-mx-4 mt-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:mt-20">
           {faqKeys.map((faqKey) => (
             <SingleFaq
+              key={faqKey}
               question={t(`Faq.questions.question_${faqKey}.question`)}
               answer={t(`Faq.questions.question_${faqKey}.answer`)}
             />

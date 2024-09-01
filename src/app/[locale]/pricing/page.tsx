@@ -3,11 +3,20 @@ import Faq from "@/components/Faq";
 import Pricing from "@/components/Pricing";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Pricing Page",
-  description: "This is pricing page description",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const { locale } = params;
+  const t = await getTranslations({ locale });
+
+  return {
+    title: t("Pricing.hero.title"),
+  };
+}
 
 const PricingPage = ({ params }: any) => {
   const t = useTranslations("Pricing");

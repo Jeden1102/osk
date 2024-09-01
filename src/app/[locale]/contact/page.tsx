@@ -1,16 +1,28 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Contact Page",
-  description: "This is contact page description",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const { locale } = params;
+  const t = await getTranslations({ locale });
 
-const ContactPage = ({ params }: any) => {
+  return {
+    title: t("Contact.title"),
+  };
+}
+
+
+const ContactPage = async ({ params }: any) => {
+  const { locale } = params;
+  const t = await getTranslations({ locale });
   return (
     <>
-      <Breadcrumb pageName="Contact Page" />
+      <Breadcrumb pageName={t('Contact.title')} />
 
       <Contact />
     </>

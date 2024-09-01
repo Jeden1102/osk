@@ -56,6 +56,7 @@ const FaqPage = ({ params }: any) => {
                 <div className="-mx-4 mt-12 grid md:grid-cols-2 lg:grid-cols-3  lg:mt-20 gap-4">
                   {new Array(6).fill("").map((_, idx) => (
                     <SingleFaq
+                      key={idx}
                       question={t(`Faq.questions.question_${idx + 1}.question`)}
                       answer={t(`Faq.questions.question_${idx + 1}.answer`)}
                     />
@@ -66,6 +67,7 @@ const FaqPage = ({ params }: any) => {
                 <div className="-mx-4 mt-12 grid md:grid-cols-2 lg:grid-cols-3  lg:mt-20 gap-4">
                   {new Array(6).fill("").map((_, idx) => (
                     <SingleFaq
+                    key={idx}
                       question={t(`Faq.questions.question_${idx + 7}.question`)}
                       answer={t(`Faq.questions.question_${idx + 7}.answer`)}
                     />
@@ -76,6 +78,7 @@ const FaqPage = ({ params }: any) => {
                 <div className="-mx-4 mt-12 grid md:grid-cols-2 lg:grid-cols-3  lg:mt-20 gap-4">
                   {new Array(6).fill("").map((_, idx) => (
                     <SingleFaq
+                      key={idx}
                       question={t(
                         `Faq.questions.question_${idx + 13}.question`
                       )}
