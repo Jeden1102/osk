@@ -142,7 +142,7 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute left-0 right-0 z-30  w-full shadow-xl md:shadow-none rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
+                  className={`navbar absolute left-0 right-0 z-30  w-full shadow-xl md:shadow-none rounded border-[.5px] border-body-color/50 bg-white dark:bg-gray-900 px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
