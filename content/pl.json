@@ -5,6 +5,10 @@
     "know_more": "Dowiedz sie wiecej"
   },
   "Home": {
+    "metadata": {
+      "title": "Start",
+      "description": "Test description"
+    },
     "hero": {
       "title": "Zarządzaj swoją szkołą jazdy z łatwością",
       "description": "Odkryj nowoczesne narzędzie do zarządzania szkołą jazdy. Rezerwuj lekcje, monitoruj postępy kursantów i komunikuj się z instruktorami — wszystko w jednej, intuicyjnej aplikacji."
@@ -62,7 +66,7 @@
   "Features": {
     "title": "O produkcie",
     "subtitle": "Najwazniejsze informacje o produkcie",
-    "desc": "Produkt pomaga w ....",
+    "desc": "Korzystając z systemu MojeJazdy w swoim Ośrodku Szkolenia Kierowców, zyskasz nie tylko Ty jako właściciel, ale także każda osoba, która z niego skorzysta. Oto kluczowe funkcje aplikacji:",
     "for_admin": "Dla administratora",
     "for_instructor": "Dla instruktora",
     "for_student": "Dla studenta",
@@ -130,27 +134,93 @@
     "questions": {
       "question_1": {
         "question": "Jakie usługi oferuje wasza platforma?",
-        "answer": "Nasza platforma oferuje kompleksowe narzędzia do zarządzania szkołą jazdy, w tym rezerwacje lekcji, śledzenie postępów kursantów, zarządzanie harmonogramem i komunikację z instruktorami."
+        "answer": "Nasza platforma zapewnia kompleksowe narzędzia do zarządzania szkołą jazdy, w tym rezerwację jazd, śledzenie postępów kursantów, zarządzanie harmonogramem i komunikację z instruktorami.",
+        "target": "for_admin"
       },
       "question_2": {
         "question": "Czy mogę dostosować funkcje do potrzeb mojej szkoły jazdy?",
-        "answer": "Tak, nasze oprogramowanie jest elastyczne i można je dostosować do specyficznych potrzeb Twojej szkoły jazdy."
+        "answer": "Tak, nasze oprogramowanie jest elastyczne i może być dostosowane do specyficznych potrzeb Twojej szkoły jazdy.",
+        "target": "for_admin"
       },
       "question_3": {
-        "question": "Czy platforma umożliwia płatności online?",
-        "answer": "Tak, nasza platforma wspiera płatności online, co ułatwia zarządzanie opłatami za kursy."
+        "question": "Czy platforma obsługuje płatności online?",
+        "answer": "Tak, nasza platforma obsługuje płatności online, co ułatwia zarządzanie opłatami za kurs.",
+        "target": "for_admin"
       },
       "question_4": {
         "question": "Jak mogę śledzić postępy moich kursantów?",
-        "answer": "Nasza platforma oferuje narzędzia do śledzenia postępów kursantów, w tym raporty i analitykę wyników oraz frekwencji."
+        "answer": "Nasza platforma oferuje narzędzia do śledzenia postępów kursantów, w tym raporty z wyników oraz analizy obecności.",
+        "target": "for_admin"
       },
       "question_5": {
-        "question": "Czy mogę zintegrować harmonogram zajęć z moim kalendarzem?",
-        "answer": "Tak, nasza platforma umożliwia synchronizację harmonogramów z popularnymi kalendarzami, takimi jak Google Calendar."
+        "question": "Czy mogę zintegrować harmonogram z moim kalendarzem?",
+        "answer": "Tak, nasza platforma umożliwia synchronizację z popularnymi kalendarzami, takimi jak Google Calendar.",
+        "target": "for_admin"
       },
       "question_6": {
-        "question": "Czy wasza platforma jest zgodna z przepisami RODO?",
-        "answer": "Tak, nasze oprogramowanie jest zgodne z przepisami RODO, zapewniając bezpieczeństwo danych osobowych użytkowników."
+        "question": "Czy wasza platforma jest zgodna z RODO?",
+        "answer": "Tak, nasze oprogramowanie jest zgodne z RODO, co zapewnia bezpieczeństwo danych osobowych użytkowników.",
+        "target": "for_admin"
+      },
+      "question_7": {
+        "question": "Jak mogę zarządzać swoim harmonogramem jazd?",
+        "answer": "Instruktorzy mogą łatwo zarządzać harmonogramem jazd za pomocą dedykowanego widoku kalendarza, który umożliwia rezerwację, edycję i anulowanie lekcji.",
+        "target": "for_instructor"
+      },
+      "question_8": {
+        "question": "Czy mogę zobaczyć historię jazd z każdym kursantem?",
+        "answer": "Tak, instruktorzy mają dostęp do pełnej historii jazd z każdym kursantem, w tym notatek i ocen postępów.",
+        "target": "for_instructor"
+      },
+      "question_9": {
+        "question": "Jak mogę śledzić przebieg pojazdów?",
+        "answer": "Instruktorzy mogą rejestrować i śledzić przebieg pojazdów bezpośrednio na platformie, co zapewnia dokładne rejestry do celów konserwacyjnych.",
+        "target": "for_instructor"
+      },
+      "question_10": {
+        "question": "Czy mogę komunikować się bezpośrednio z moimi kursantami przez platformę?",
+        "answer": "Tak, nasza platforma umożliwia instruktorom wysyłanie wiadomości i powiadomień bezpośrednio do swoich kursantów.",
+        "target": "for_instructor"
+      },
+      "question_11": {
+        "question": "Jak mogę zaktualizować swoją dostępność na lekcje?",
+        "answer": "Instruktorzy mogą zaktualizować swoją dostępność poprzez ustawienia konta, co ułatwia zarządzanie rezerwacjami.",
+        "target": "for_instructor"
+      },
+      "question_12": {
+        "question": "Czy mogę zobaczyć swoje zarobki z jazd?",
+        "answer": "Tak, instruktorzy mogą śledzić swoje zarobki na platformie, z szczegółowymi wykazami zrealizowanych lekcji i płatności.",
+        "target": "for_instructor"
+      },
+      "question_13": {
+        "question": "Jak mogę zarezerwować jazdę?",
+        "answer": "Kursanci mogą zarezerwować jazdę przez platformę, wybierając dostępny termin z preferowanym instruktorem.",
+        "target": "for_student"
+      },
+      "question_14": {
+        "question": "Czy mogę zobaczyć swoje postępy w kursie jazdy?",
+        "answer": "Tak, kursanci mogą zobaczyć swoje postępy, w tym zakończone lekcje i oceny umiejętności, poprzez swój osobisty panel.",
+        "target": "for_student"
+      },
+      "question_15": {
+        "question": "Jak mogę sprawdzić, ile lekcji mi pozostało?",
+        "answer": "Kursanci mogą sprawdzić liczbę pozostałych lekcji bezpośrednio w swoim koncie, wraz ze szczegółową historią wszystkich dotychczasowych sesji.",
+        "target": "for_student"
+      },
+      "question_16": {
+        "question": "Czy otrzymam przypomnienia o nadchodzących lekcjach?",
+        "answer": "Tak, kursanci otrzymają powiadomienia push i przypomnienia e-mailowe o nadchodzących lekcjach.",
+        "target": "for_student"
+      },
+      "question_17": {
+        "question": "Jak mogę zapłacić za moje lekcje?",
+        "answer": "Kursanci mogą zapłacić za swoje lekcje bezpośrednio przez platformę, korzystając z różnych metod płatności online.",
+        "target": "for_student"
+      },
+      "question_18": {
+        "question": "Czy mogę anulować lub przełożyć zarezerwowaną lekcję?",
+        "answer": "Tak, kursanci mogą anulować lub przełożyć lekcję przez platformę, pod warunkiem, że przestrzegają polityki anulowania szkoły.",
+        "target": "for_student"
       }
     }
   },
@@ -159,5 +229,11 @@
     "about_us": "O nas",
     "features": "Funkcjonalności",
     "useful_links": "Inne"
+  },
+  "PrivacyPolicy": {
+    "title": "Polityka prywatnosci"
+  },
+  "TermsOfService": {
+    "title": "Regulamin"
   }
 }

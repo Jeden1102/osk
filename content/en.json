@@ -45,6 +45,7 @@
     }
   },
   "Pricing": {
+    "title": "Pricing",
     "hero": {
       "title": "English pricing title"
     }
@@ -62,7 +63,7 @@
   "Features": {
     "title": "About  product",
     "subtitle": "General information about the product",
-    "desc": "Product helps with...",
+    "desc": "By implementing the MojeJazdy system in your Driving School, you'll benefit not only as the owner, but every user of the system will too. Here are the key features of the app:",
     "for_admin": "For admin",
     "for_instructor": "For instructor",
     "for_student": "For student",
@@ -122,6 +123,7 @@
     }
   },
   "Faq": {
+    "title": "Frequently asked questions",
     "sectionTitle": {
       "subtitle": "FAQ",
       "title": "Any Questions? Answered",
@@ -130,27 +132,93 @@
     "questions": {
       "question_1": {
         "question": "What services does your platform offer?",
-        "answer": "Our platform provides comprehensive tools for managing a driving school, including lesson booking, student progress tracking, schedule management, and instructor communication."
+        "answer": "Our platform provides comprehensive tools for managing a driving school, including lesson booking, student progress tracking, schedule management, and instructor communication.",
+        "target": "for_admin"
       },
       "question_2": {
         "question": "Can I customize the features to fit my driving school's needs?",
-        "answer": "Yes, our software is flexible and can be tailored to the specific needs of your driving school."
+        "answer": "Yes, our software is flexible and can be tailored to the specific needs of your driving school.",
+        "target": "for_admin"
       },
       "question_3": {
         "question": "Does the platform support online payments?",
-        "answer": "Yes, our platform supports online payments, making it easier to manage course fees."
+        "answer": "Yes, our platform supports online payments, making it easier to manage course fees.",
+        "target": "for_admin"
       },
       "question_4": {
         "question": "How can I track my students' progress?",
-        "answer": "Our platform offers tools for tracking student progress, including performance reports and attendance analytics."
+        "answer": "Our platform offers tools for tracking student progress, including performance reports and attendance analytics.",
+        "target": "for_admin"
       },
       "question_5": {
         "question": "Can I integrate the schedule with my calendar?",
-        "answer": "Yes, our platform allows for synchronization with popular calendars, such as Google Calendar."
+        "answer": "Yes, our platform allows for synchronization with popular calendars, such as Google Calendar.",
+        "target": "for_admin"
       },
       "question_6": {
         "question": "Is your platform GDPR compliant?",
-        "answer": "Yes, our software is GDPR compliant, ensuring the security of user personal data."
+        "answer": "Yes, our software is GDPR compliant, ensuring the security of user personal data.",
+        "target": "for_admin"
+      },
+      "question_7": {
+        "question": "How can I manage my schedule of driving lessons?",
+        "answer": "Instructors can easily manage their lesson schedules through a dedicated calendar view that allows for booking, editing, and canceling lessons.",
+        "target": "for_instructor"
+      },
+      "question_8": {
+        "question": "Can I see the history of lessons with each student?",
+        "answer": "Yes, instructors have access to the full history of lessons with each student, including notes and performance evaluations.",
+        "target": "for_instructor"
+      },
+      "question_9": {
+        "question": "How do I track the mileage of vehicles?",
+        "answer": "Instructors can log and track vehicle mileage directly within the platform, ensuring accurate records for maintenance purposes.",
+        "target": "for_instructor"
+      },
+      "question_10": {
+        "question": "Can I communicate directly with my students through the platform?",
+        "answer": "Yes, our platform allows instructors to send messages and notifications directly to their students.",
+        "target": "for_instructor"
+      },
+      "question_11": {
+        "question": "How do I update my availability for lessons?",
+        "answer": "Instructors can update their availability through their account settings, making it easier to manage bookings.",
+        "target": "for_instructor"
+      },
+      "question_12": {
+        "question": "Is there a way to view my earnings from the lessons?",
+        "answer": "Yes, instructors can track their earnings through the platform, with detailed breakdowns of completed lessons and payments.",
+        "target": "for_instructor"
+      },
+      "question_13": {
+        "question": "How can I book a driving lesson?",
+        "answer": "Students can book driving lessons through the platform by selecting an available time slot with their preferred instructor.",
+        "target": "for_student"
+      },
+      "question_14": {
+        "question": "Can I view my progress in the driving course?",
+        "answer": "Yes, students can view their progress, including completed lessons and skills assessments, through their personal dashboard.",
+        "target": "for_student"
+      },
+      "question_15": {
+        "question": "How do I know how many lessons I have left?",
+        "answer": "Students can check the number of remaining lessons directly in their account, along with a detailed history of all past sessions.",
+        "target": "for_student"
+      },
+      "question_16": {
+        "question": "Will I receive reminders for upcoming lessons?",
+        "answer": "Yes, students will receive push notifications and email reminders for their upcoming lessons.",
+        "target": "for_student"
+      },
+      "question_17": {
+        "question": "How can I pay for my lessons?",
+        "answer": "Students can pay for their lessons directly through the platform using various online payment methods.",
+        "target": "for_student"
+      },
+      "question_18": {
+        "question": "Can I cancel or reschedule a booked lesson?",
+        "answer": "Yes, students can cancel or reschedule a lesson through the platform, provided they adhere to the school's cancellation policy.",
+        "target": "for_student"
       }
     }
   },
@@ -159,5 +227,11 @@
     "about_us": "About Us",
     "features": "Features",
     "useful_links": "Useful Links"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy policy"
+  },
+  "TermsOfService": {
+    "title": "Terms of service"
   }
 }

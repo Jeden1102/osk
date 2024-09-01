@@ -5,7 +5,7 @@ import SingleBlog from "./SingleBlog";
 const HomeBlogSection = ({ posts }: any) => {
   const t = useTranslations();
   return (
-    <section className="bg-white pb-10 pt-20 dark:bg-gray-900  lg:pb-20 lg:pt-[120px]">
+    <section className="bg-white pb-10 dark:bg-gray-900  lg:pb-20">
       <div className="container mx-auto">
         <div className="mb-[60px]">
           <SectionTitle

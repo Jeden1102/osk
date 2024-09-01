@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Link} from "@/navigation";
+import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 const Footer = () => {
   const t = useTranslations();
@@ -22,7 +22,7 @@ const Footer = () => {
                 />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                {t('Footer.slogan')}
+                {t("Footer.slogan")}
               </p>
               <div className="-mx-3 flex items-center">
                 <Link
@@ -97,31 +97,31 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
-                {t('Footer.about_us')}
+                {t("Footer.about_us")}
               </h4>
               <ul>
                 <li>
                   <Link
                     href="/"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-secondary"
                   >
-                {t('Navigation.Home')}
+                    {t("Navigation.Home")}
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/product"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-secondary"
                   >
-                {t('Navigation.Product')}
+                    {t("Navigation.Product")}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/product"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    href="/pricing"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-secondary"
                   >
-                {t('Navigation.Pricing')}
+                    {t("Navigation.Pricing")}
                   </Link>
                 </li>
               </ul>
@@ -130,31 +130,31 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
-              {t('Footer.features')}
+                {t("Footer.features")}
               </h4>
               <ul>
                 <li>
                   <Link
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-secondary"
                   >
-              {t('Features.for_admin')}
+                    {t("Features.for_admin")}
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-secondary"
                   >
-              {t('Features.for_instructor')}
+                    {t("Features.for_instructor")}
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-secondary"
                   >
-              {t('Features.for_student')}
+                    {t("Features.for_student")}
                   </Link>
                 </li>
               </ul>
@@ -163,31 +163,31 @@ const Footer = () => {
           <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
-              {t('Footer.useful_links')}
+                {t("Footer.useful_links")}
               </h4>
               <ul>
                 <li>
                   <Link
                     href="/faq"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-secondary"
                   >
-                {t('Navigation.FAQ')}
+                    {t("Navigation.FAQ")}
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/blog"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-secondary"
                   >
-                {t('Navigation.Blog')}
+                    {t("Navigation.Blog")}
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/contact"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-secondary"
                   >
-                {t('Navigation.Contact')}
+                    {t("Navigation.Contact")}
                   </Link>
                 </li>
               </ul>
@@ -206,13 +206,13 @@ const Footer = () => {
                     href="/privacy-policy"
                     className="px-3 text-base text-gray-7 hover:text-white hover:underline"
                   >
-                {t('Navigation.PrivacyPolicy')}
+                    {t("Navigation.PrivacyPolicy")}
                   </Link>
                   <Link
                     href="/terms-of-service"
                     className="px-3 text-base text-gray-7 hover:text-white hover:underline"
                   >
-                {t('Navigation.TermsOfService')}
+                    {t("Navigation.TermsOfService")}
                   </Link>
                 </div>
               </div>
