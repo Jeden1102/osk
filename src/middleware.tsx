@@ -11,5 +11,5 @@ const middleware = createMiddleware({
 export default middleware;
 
 export const config = {
-  matcher: ["/", "/(pl|en)/:page*"],
+  matcher: ["/((?!api|_next|_vercel\\..*|images).*?)"],
 };

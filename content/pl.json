@@ -2,6 +2,7 @@
   "Common": {
     "aboutProduct": "O produkcie",
     "startFreeTrial": "Sprawdz za darmo",
+    "tryDemo": "Wyprobuj demo",
     "know_more": "Dowiedz sie wiecej"
   },
   "Home": {
@@ -241,5 +242,11 @@
   },
   "Contact": {
     "title": "Kontakt"
+  },
+  "Product": {
+    "title": "Produkt"
+  },
+  "Demo": {
+    "title": "Wersja demonstracyjna"
   }
 }

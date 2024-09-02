@@ -33,9 +33,7 @@ const Hero = () => {
                   </li>
                   <li>
                     <Button asChild variant="secondary" size="lg">
-                      <Link href="https://nextjstemplates.com/templates/play">
-                        {t("Common.startFreeTrial")}
-                      </Link>
+                      <Link href="/demo">{t("Common.tryDemo")}</Link>
                     </Button>
                   </li>
                 </ul>

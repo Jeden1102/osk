@@ -2,6 +2,7 @@
   "Common": {
     "aboutProduct": "About the product",
     "startFreeTrial": "Start Free Trial",
+    "tryDemo": "Try demo",
     "know_more": "Know more"
   },
   "Home": {
@@ -242,5 +243,11 @@
   },
   "Contact": {
     "title": "Contact"
+  },
+  "Product": {
+    "title": "Product"
+  },
+  "Demo": {
+    "title": "Demo"
   }
 }

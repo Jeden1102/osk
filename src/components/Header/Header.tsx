@@ -22,12 +22,12 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
 
   const translations = {
     pl: {
-      logIn: "Zaloguj",
-      signUp: "Zarejestruj",
+      demo: "Wyprobuj demo",
+      panel: "Panel",
     },
     en: {
-      logIn: "Log in",
-      signUp: "Sign up",
+      demo: "Demo",
+      panel: "Panel",
     },
   } as {
     [key: string]: {
@@ -153,7 +153,7 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
                           {pathUrl !== "/" ? (
                             <Link
                               onClick={navbarToggleHandler}
-                              scroll={false}
+                              scroll={true}
                               href={menuItem.path}
                               className={`ud-menu-scroll flex py-2 text-base text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 ${
                                 pathUrl === menuItem?.path && "text-primary"
@@ -163,7 +163,7 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
                             </Link>
                           ) : (
                             <Link
-                              scroll={false}
+                              scroll={true}
                               href={menuItem.path}
                               className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${"text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"} ${
                                 pathUrl === menuItem?.path && "font-bold"
@@ -250,7 +250,7 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
                   <div className="md:hidden">
                     <div className="flex flex-col gap-2 my-4 border-t py-6">
                       <Button asChild onClick={navbarToggleHandler}>
-                        <Link href="/signin">{translations[lang].logIn}</Link>
+                        <Link href="/demo">{translations[lang].demo}</Link>
                       </Button>
 
                       <Button
@@ -258,7 +258,9 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
                         variant={"secondary"}
                         onClick={navbarToggleHandler}
                       >
-                        <Link href="/signup">{translations[lang].signUp}</Link>
+                        <Link href="https://osk-admin.vercel.app/auth/signin">
+                          {translations[lang].panel}
+                        </Link>
                       </Button>
                     </div>
 
@@ -275,11 +277,13 @@ const Header = ({ menuData }: { menuData: Menu[] }) => {
                 <LanguageSelector />
                 <div className="flex gap-4 ml-4">
                   <Button asChild>
-                    <Link href="/signin">{translations[lang].logIn}</Link>
+                    <Link href="/demo">{translations[lang].demo}</Link>
                   </Button>
 
                   <Button asChild variant={"secondary"}>
-                    <Link href="/signup">{translations[lang].signUp}</Link>
+                    <Link href="https://osk-admin.vercel.app/auth/signin">
+                      {translations[lang].panel}
+                    </Link>
                   </Button>
                 </div>
               </div>
