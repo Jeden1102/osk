@@ -247,6 +247,7 @@
     "title": "Produkt"
   },
   "Demo": {
-    "title": "Wersja demonstracyjna"
+    "title": "Wersja demonstracyjna",
+    "legal": "Sprawdz wersje demo, bez platnosci, instalacji."
   }
 }
