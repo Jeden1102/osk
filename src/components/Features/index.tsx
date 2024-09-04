@@ -25,7 +25,7 @@ const Features = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="admin">
-            <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">
+            <div className="-mx-4 mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {featuresData.admin.map((feature, i) => (
                 <SingleFeature
                   key={i}
@@ -37,7 +37,7 @@ const Features = () => {
             </div>
           </TabsContent>
           <TabsContent value="instructor">
-            <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">
+            <div className="-mx-4 mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {featuresData.instructor.map((feature, i) => (
                 <SingleFeature
                   key={i}
@@ -49,7 +49,7 @@ const Features = () => {
             </div>
           </TabsContent>
           <TabsContent value="student">
-            <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">
+            <div className="-mx-4 mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {featuresData.student.map((feature, i) => (
                 <SingleFeature
                   key={i}
