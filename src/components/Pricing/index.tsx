@@ -9,7 +9,7 @@ const Pricing = () => {
       id="pricing"
       className="relative z-20 overflow-hidden bg-white pb-12  dark:bg-gray-900  lg:pb-[90px]"
     >
-      <div className="container">
+      <div className="md:px-20">
         <section className="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24">
           <div className="absolute bottom-0 right-0 -mb-48 md:inset-y-0"></div>
 
