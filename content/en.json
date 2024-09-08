@@ -3,7 +3,9 @@
     "aboutProduct": "About the product",
     "startFreeTrial": "Start Free Trial",
     "tryDemo": "Try demo",
-    "know_more": "Know more"
+    "know_more": "Know more",
+    "getFullAccess": "Get full access",
+    "month": "mo"
   },
   "Home": {
     "metadata": {
@@ -55,6 +57,11 @@
     "title": "Pricing",
     "hero": {
       "title": "Pricing"
+    },
+    "cta": {
+      "title": "Try our product. One, simple pricing.",
+      "description": "All features for one price.",
+      "fullPack": "Full pack"
     }
   },
   "Navigation": {

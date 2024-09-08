@@ -1,9 +1,11 @@
+import { useTranslations } from "next-intl";
 import SectionTitle from "../Common/SectionTitle";
 import PricingBox from "./PricingBox";
 import { pricingData } from "@/stripe/pricingData";
 import { FaCircleCheck } from "react-icons/fa6";
 
 const Pricing = () => {
+  const t = useTranslations();
   return (
     <section
       id="pricing"
@@ -17,10 +19,10 @@ const Pricing = () => {
             <div className="grid items-end grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-20">
               <div>
                 <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-                  Try our product. One, simple pricing.
+                  {t("Pricing.cta.title")}
                 </h2>
                 <p className="mt-6 text-base leading-relaxed text-blue-100">
-                  All features for one price.
+                  {t("Pricing.cta.description")}
                 </p>
 
                 <ul className="mt-12 space-y-4 md:mt-20">
@@ -75,10 +77,13 @@ const Pricing = () => {
                 <div className="overflow-hidden text-center bg-white rounded-md shadow-md">
                   <div className="px-12 py-10">
                     <h3 className="text-xs font-semibold tracking-widest uppercase text-secondary">
-                      Full Pack
+                      {t("Pricing.cta.fullPack")}
                     </h3>
                     <p className="mt-4 text-6xl font-bold text-black">
-                      $79<span className="text-5xl font-normal">/mo</span>
+                      $79
+                      <span className="text-5xl font-normal">
+                        /{t("Common.month")}
+                      </span>
                     </p>
 
                     <a
@@ -87,7 +92,7 @@ const Pricing = () => {
                       className="inline-flex items-center justify-center w-full px-4 py-4 mt-10 font-semibold text-white transition-all duration-200 rounded-full bg-secondary"
                       role="button"
                     >
-                      Get full access
+                      {t("Common.getFullAccess")}
                       <svg
                         className="w-5 h-5 ml-2"
                         xmlns="http://www.w3.org/2000/svg"
