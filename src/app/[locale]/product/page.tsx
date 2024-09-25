@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { Bento } from "@/components/Product/Bento";
 import TextBlock from "@/components/TextBlock";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
@@ -26,7 +27,7 @@ const ProductPage = ({ params }: any) => {
   return (
     <>
       <Breadcrumb pageName={t("Product.title")} />
-      <TextBlock>Sample text</TextBlock>
+      <Bento />
     </>
   );
 };
