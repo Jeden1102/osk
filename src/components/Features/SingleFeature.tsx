@@ -1,6 +1,7 @@
 import { Feature } from "@/types/feature";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
+import { Card, CardContent } from "../ui/card";
 
 const SingleFeature = ({
   feature,
@@ -14,29 +15,30 @@ const SingleFeature = ({
   const t = useTranslations();
   const { icon, btn, btnLink } = feature;
   return (
-    <div className="w-full px-4">
-      <div
-        className="wow fadeInUp group mb-6 h-full flex flex-col"
-        data-wow-delay=".15s"
-      >
-        <div className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
-          <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
-          {icon}
-        </div>
-        <h3 className="mb-2 text-xl font-bold text-dark dark:text-white">
-          {t(`Features.${featureKey}.feature_${index + 1}.title`)}
-        </h3>
-        <p className="text-body-color dark:text-dark-6 lg:mb-4">
-          {t(`Features.${featureKey}.feature_${index + 1}.desc`)}
-        </p>
-        <Link
-          href={btnLink}
-          className="text-base mt-auto font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+    <Card className="w-full py-6">
+      <CardContent className="py-0">
+        <div
+          className="wow fadeInUp group h-full flex flex-col"
+          data-wow-delay=".15s"
         >
-          {t("Common.know_more")}
-        </Link>
-      </div>
-    </div>
+          <div className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-gradient bg-gradient-to-br from-primary to-secondary">
+            {icon}
+          </div>
+          <h3 className="mb-2 text-xl font-bold text-dark dark:text-white">
+            {t(`Features.${featureKey}.feature_${index + 1}.title`)}
+          </h3>
+          <p className="text-body-color dark:text-dark-6 lg:mb-4">
+            {t(`Features.${featureKey}.feature_${index + 1}.desc`)}
+          </p>
+          <Link
+            href={btnLink}
+            className="text-base mt-auto pt-2 font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+          >
+            {t("Common.know_more")}
+          </Link>
+        </div>
+      </CardContent>
+    </Card>
   );
 };
 

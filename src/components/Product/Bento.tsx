@@ -68,7 +68,7 @@ export function Bento() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-0 md:px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Card className="md:col-span-2 row-span-2 bg-gradient-to-br from-primary to-secondary text-white">
           <CardHeader>
