@@ -1,5 +1,5 @@
 import Newsletter from "@/components/Blog/Newsletter";
-import PopularArticle from "@/components/Blog/PopularArticle";
+import ArticleTeaser from "@/components/Blog/ArticleTeaser";
 import SingleBlog from "@/components/Blog/SingleBlog";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { getAllPosts, getPostBySlug } from "@/utils/markdown";
@@ -185,31 +185,18 @@ export default async function Post({ params }: Props) {
                           className="wow fadeInUp relative pb-5 text-2xl font-semibold text-dark dark:text-white sm:text-[28px]"
                           data-wow-delay=".1s"
                         >
-                          Popular Articles
+                          Recent Articles
                         </h2>
                         <span className="mb-10 inline-block h-[2px] w-20 bg-primary"></span>
                       </div>
                       {posts.slice(0, 3).map((blog, i) => (
-                        <PopularArticle
+                        <ArticleTeaser
                           key={i}
                           image={blog?.coverImage}
                           title={blog?.title.slice(0, 30)}
                           name={blog?.author}
                         />
                       ))}
-                    </div>
-
-                    <div
-                      className="wow fadeInUp mb-12 overflow-hidden rounded"
-                      data-wow-delay=".1s"
-                    >
-                      <Image
-                        src="/images/blog/bannder-ad.png"
-                        alt="image"
-                        className="w-full"
-                        width={408}
-                        height={254}
-                      />
                     </div>
                   </div>
                 </div>

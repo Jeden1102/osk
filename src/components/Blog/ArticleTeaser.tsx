@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Link } from "@/navigation";
 
-const PopularArticle = (props: {
+const ArticleTeaser = (props: {
   image: string;
   title: string;
   name: string;
@@ -39,4 +39,4 @@ const PopularArticle = (props: {
   );
 };
 
-export default PopularArticle;
+export default ArticleTeaser;
