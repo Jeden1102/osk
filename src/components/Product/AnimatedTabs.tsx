@@ -53,13 +53,16 @@ function AnimatedTabs({ tabs }: AnimatedTabsProps) {
           </button>
         ))}
       </div>
-      <Image
-        src={tabs[activeTab].image}
-        alt="Feature image"
-        width={600}
-        height={400}
-        loading="lazy"
-      />
+      <div className="relative">
+        <span className="absolute -top-1 left-0 h-1 animate-progress-bar bg-gradient-to-r from-primary to-secondary"></span>
+        <Image
+          src={tabs[activeTab].image}
+          alt="Feature image"
+          width={600}
+          height={400}
+          loading="lazy"
+        />
+      </div>
     </div>
   );
 }
