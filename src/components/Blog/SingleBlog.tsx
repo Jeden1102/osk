@@ -16,10 +16,11 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             className="w-full transition group-hover:rotate-6 group-hover:scale-125"
             width={408}
             height={272}
+            data-aos="zoom-in"
           />
         </Link>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <span className="mb-5 inline-block rounded bg-primary px-4 py-1 text-center text-xs font-semibold leading-loose text-white">
           {format(new Date(date), "dd MMM yyyy")}
         </span>

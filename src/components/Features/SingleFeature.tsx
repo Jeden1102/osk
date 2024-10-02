@@ -15,7 +15,11 @@ const SingleFeature = ({
   const t = useTranslations();
   const { icon, btn, btnLink } = feature;
   return (
-    <Card className="w-full py-6">
+    <Card
+      className="w-full py-6"
+      data-aos="fade-up"
+      data-aos-delay={index * 100}
+    >
       <CardContent className="py-0">
         <div
           className="wow fadeInUp group h-full flex flex-col"

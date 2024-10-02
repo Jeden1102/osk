@@ -11,6 +11,7 @@ const Hero = () => {
       <section
         id="home"
         className="relative overflow-hidden bg-white dark:bg-gray-900   pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        data-aos="fade-in"
       >
         <div className="container">
           <div className="-mx-4 flex flex-col md:flex-row items-center">

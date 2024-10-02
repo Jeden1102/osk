@@ -7,7 +7,8 @@ import "../../styles/prism-vsc-dark-plus.css";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import NextTopLoader from 'nextjs-toploader';
+import NextTopLoader from "nextjs-toploader";
+import AosInit from "@/components/AosInit";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -18,7 +19,6 @@ const APP_NAME = "PWA App";
 const APP_DEFAULT_TITLE = "My Awesome PWA App";
 const APP_TITLE_TEMPLATE = "%s - PWA App";
 const APP_DESCRIPTION = "Best PWA app in the world!";
-
 export const metadata: Metadata = {
   applicationName: APP_NAME,
   title: {
@@ -75,8 +75,9 @@ export default async function RootLayout({
             enableSystem={false}
             defaultTheme="light"
           >
-            <NextTopLoader height={4} color="#2a9d8f" showSpinner={false}/>
+            <NextTopLoader height={4} color="#2a9d8f" showSpinner={false} />
             <Header />
+            <AosInit />
             {children}
             <Footer />
             <ScrollToTop />

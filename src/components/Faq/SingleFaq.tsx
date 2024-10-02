@@ -1,9 +1,17 @@
-const SingleFaq = (props: { question: string; answer: string }) => {
-  const { question, answer } = props;
+const SingleFaq = (props: {
+  question: string;
+  answer: string;
+  index: number;
+}) => {
+  const { question, answer, index } = props;
 
   return (
     <>
-      <div className="mb-12 flex lg:mb-[70px]">
+      <div
+        className="mb-12 flex lg:mb-[70px]"
+        data-aos="fade-up"
+        data-aos-delay={index * 100}
+      >
         <div className="bg-primary mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
           <svg
             width="32"

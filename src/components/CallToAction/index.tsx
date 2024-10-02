@@ -11,17 +11,30 @@ const CallToAction = () => {
           <div className="-mx-4 flex flex-wrap items-stretch">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[570px] text-center">
-                <h2 className="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
+                <h2
+                  data-aos="fade-up"
+                  className="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]"
+                >
                   <span>{t("Home.cta.title")}</span>
                   <span className="text-3xl font-normal md:text-[40px]">
                     {" "}
                     {t("Home.cta.subtitle")}{" "}
                   </span>
                 </h2>
-                <p className="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  className="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white"
+                >
                   {t("Home.cta.description")}
                 </p>
-                <Button asChild variant="secondary" size="lg">
+                <Button
+                  data-aos="fade-up"
+                  ata-aos-delay="150"
+                  asChild
+                  variant="secondary"
+                  size="lg"
+                >
                   <Link href="/">{t("Common.startFreeTrial")}</Link>
                 </Button>
               </div>
