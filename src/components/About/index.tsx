@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
+
 const About = () => {
   const t = useTranslations();
   return (

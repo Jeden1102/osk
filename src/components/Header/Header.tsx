@@ -1,14 +1,12 @@
 "use client";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import LanguageSelector from "../LanguageSelector";
 import { Menu } from "@/types/menu";
 import { Link } from "@/navigation";
 import ThemeToggler from "./ThemeToggler";
-import currentLang from "@/utils/currentLang";
 
 const Header = ({ menuData }: { menuData: Menu[] }) => {
   const pathUrl = usePathname();

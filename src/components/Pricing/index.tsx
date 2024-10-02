@@ -1,7 +1,4 @@
 import { useTranslations } from "next-intl";
-import SectionTitle from "../Common/SectionTitle";
-import PricingBox from "./PricingBox";
-import { pricingData } from "@/stripe/pricingData";
 import { FaCircleCheck } from "react-icons/fa6";
 
 const Pricing = () => {

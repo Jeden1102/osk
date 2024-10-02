@@ -18,8 +18,6 @@ import {
   BookOpen,
   Clock,
   Zap,
-  Shield,
-  Smartphone,
 } from "lucide-react";
 
 export function Bento() {

@@ -4,6 +4,7 @@ import AnimatedTabs from "./AnimatedTabs";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { PiCarSimpleLight } from "react-icons/pi";
 import { IoStatsChartOutline } from "react-icons/io5";
+
 function FeaturesSlides() {
   const t = useTranslations();
 
