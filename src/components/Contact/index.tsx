@@ -13,12 +13,15 @@ const Contact = () => {
             <div className="ud-contact-content-wrapper">
               <div className="ud-contact-title mb-12 lg:mb-[150px]">
                 <SectionTitle
-                  subtitle={t('Home.contact.subtitle')}
-                  title={t('Home.contact.title')}
+                  subtitle={t("Home.contact.subtitle")}
+                  title={t("Home.contact.title")}
                   paragraph=""
                 />
               </div>
-              <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
+              <div
+                className="mb-12 flex flex-wrap justify-between lg:mb-0"
+                data-aos="fade-up"
+              >
                 <div className="mb-8 flex w-[330px] max-w-full">
                   <div className="mr-6 text-[32px] text-primary">
                     <svg
@@ -32,7 +35,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="mb-[18px] text-lg font-semibold text-dark dark:text-white">
-                    {t('Home.contact.helpLabel')}
+                      {t("Home.contact.helpLabel")}
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
                       info@yourdomain.com
@@ -45,14 +48,14 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
+          <div className="w-full px-4 lg:w-5/12 xl:w-4/12" data-aos="fade-up">
             <div
               className="wow fadeInUp rounded-lg bg-white px-8 py-10 shadow-testimonial dark:bg-gray-600 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
               data-wow-delay=".2s
               "
             >
               <h3 className="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
-                {t('Home.contact.form.title')}
+                {t("Home.contact.form.title")}
               </h3>
               <form>
                 <div className="mb-[22px]">
@@ -60,12 +63,14 @@ const Contact = () => {
                     htmlFor="messageTitle"
                     className="mb-4 block text-sm text-body-color dark:text-dark-6"
                   >
-                    {t('Home.contact.form.messageTitle.title')}
+                    {t("Home.contact.form.messageTitle.title")}
                   </label>
                   <input
                     type="text"
                     name="messageTitle"
-                    placeholder={t('Home.contact.form.messageTitle.placeholder')}
+                    placeholder={t(
+                      "Home.contact.form.messageTitle.placeholder"
+                    )}
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
@@ -74,12 +79,12 @@ const Contact = () => {
                     htmlFor="email"
                     className="mb-4 block text-sm text-body-color dark:text-dark-6"
                   >
-                    {t('Home.contact.form.email.title')}
+                    {t("Home.contact.form.email.title")}
                   </label>
                   <input
                     type="email"
                     name="email"
-                    placeholder={t('Home.contact.form.email.placeholder')}
+                    placeholder={t("Home.contact.form.email.placeholder")}
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
@@ -88,12 +93,12 @@ const Contact = () => {
                     htmlFor="message"
                     className="mb-4 block text-sm text-body-color dark:text-dark-6"
                   >
-                    {t('Home.contact.form.message.title')}
+                    {t("Home.contact.form.message.title")}
                   </label>
                   <textarea
                     name="message"
                     rows={5}
-                    placeholder={t('Home.contact.form.message.placeholder')}
+                    placeholder={t("Home.contact.form.message.placeholder")}
                     className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   ></textarea>
                 </div>
@@ -102,7 +107,7 @@ const Contact = () => {
                     type="submit"
                     className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90"
                   >
-                    {t('Home.contact.form.send')}
+                    {t("Home.contact.form.send")}
                   </button>
                 </div>
               </form>

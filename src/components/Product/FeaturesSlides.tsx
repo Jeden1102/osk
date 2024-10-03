@@ -33,7 +33,7 @@ function FeaturesSlides() {
 
   return (
     <Tabs defaultValue="admin" className="w-full my-8">
-      <TabsList className="mx-auto">
+      <TabsList className="mx-auto" data-aos="fade-in">
         <TabsTrigger value="admin">{t("Features.for_admin")}</TabsTrigger>
         <TabsTrigger value="instructor">
           {t("Features.for_instructor")}

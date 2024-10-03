@@ -50,6 +50,7 @@ function AnimatedTabs({ tabs }: AnimatedTabsProps) {
               )}
               key={idx}
               onClick={() => handleClick(idx)}
+              data-aos="fade-in"
             >
               <span className="flex gap-4 items-center text-lg">
                 {tab.icon} {tab.title}
@@ -58,7 +59,11 @@ function AnimatedTabs({ tabs }: AnimatedTabsProps) {
             </button>
           ))}
         </div>
-        <div className="hidden md:block relative">
+        <div
+          className="hidden md:block relative"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
           {!isAnimationStopped && (
             <span className="absolute hidden md:block -top-1 left-0 h-1 animate-progress-bar bg-gradient-to-r from-primary to-secondary"></span>
           )}

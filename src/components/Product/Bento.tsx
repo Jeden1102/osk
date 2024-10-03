@@ -92,6 +92,8 @@ export function Bento() {
           <Card
             key={index}
             className={index < 2 ? "md:col-span-1 row-span-1" : ""}
+            data-aos="fade-in"
+            data-aos-delay={index * 50}
           >
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
@@ -107,7 +109,11 @@ export function Bento() {
           </Card>
         ))}
 
-        <Card className="md:col-span-2 row-span-1">
+        <Card
+          className="md:col-span-2 row-span-1"
+          data-aos="fade-in"
+          data-aos-delay={features.length * 50}
+        >
           <CardHeader>
             <CardTitle className="text-lg font-semibold">
               Statystyki systemu
@@ -133,7 +139,11 @@ export function Bento() {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-r from-secondary to-primary text-white pt-6">
+        <Card
+          className="bg-gradient-to-r from-secondary to-primary text-white pt-6"
+          data-aos="fade-in"
+          data-aos-delay={features.length * 50}
+        >
           <CardContent className="flex flex-col items-center justify-center h-full">
             <h3 className="text-lg font-semibold mb-2">Rozpocznij za darmo</h3>
             <p className="text-sm mb-4 text-center">

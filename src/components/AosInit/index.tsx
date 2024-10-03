@@ -10,6 +10,7 @@ export default function AosInit() {
     console.log("AOS", AOS);
     AOS.init({
       offset: 100,
+      once: true,
     });
   }, []);
 

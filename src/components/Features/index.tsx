@@ -14,7 +14,7 @@ const Features = () => {
           paragraph={t("Features.desc")}
         />
 
-        <Tabs defaultValue="admin" className="w-full mt-4">
+        <Tabs defaultValue="admin" className="w-full mt-4" data-aos="fade-up">
           <TabsList>
             <TabsTrigger value="admin">{t("Features.for_admin")}</TabsTrigger>
             <TabsTrigger value="instructor">
